@@ -11,5 +11,68 @@
 	<atom:link href="https://joedaws.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>clustering</title>
+      <link>https://joedaws.github.io/tags/clustering/</link>
+      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>convex-optimization</title>
+      <link>https://joedaws.github.io/tags/convex-optimization/</link>
+      <pubDate>Mon, 05 Nov 2018 09:48:32 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/convex-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data-analysis</title>
+      <link>https://joedaws.github.io/tags/data-analysis/</link>
+      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image-processing</title>
+      <link>https://joedaws.github.io/tags/image-processing/</link>
+      <pubDate>Thu, 08 Nov 2018 10:13:35 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine-learning</title>
+      <link>https://joedaws.github.io/tags/machine-learning/</link>
+      <pubDate>Wed, 07 Nov 2018 15:23:38 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neural-networks</title>
+      <link>https://joedaws.github.io/tags/neural-networks/</link>
+      <pubDate>Wed, 07 Nov 2018 15:23:38 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>https://joedaws.github.io/tags/optimization/</link>
+      <pubDate>Thu, 08 Nov 2018 10:13:35 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

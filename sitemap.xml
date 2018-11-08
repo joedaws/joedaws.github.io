@@ -4,6 +4,46 @@
     
     <url>
     
+      <loc>https://joedaws.github.io/project/spectral-clustering-sns-target-data/</loc>
+      <lastmod>2018-11-08T11:09:54-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/publication/weighted-l1-minimization-and-closed-trees/</loc>
+      <lastmod>2018-11-08T10:13:35-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/post/designing-neural-networks/</loc>
+      <lastmod>2018-11-07T15:23:38-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/talk/imi-graduate-student-mini-conf/</loc>
+      <lastmod>2018-11-07T13:02:28-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/project/image-inpainting/</loc>
+      <lastmod>2018-11-05T09:48:32-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://joedaws.github.io/post/</loc>
       <lastmod>2017-01-01T00:00:00-05:00</lastmod>
     </url>
@@ -28,6 +68,15 @@
     
     <url>
     
+      <loc>https://joedaws.github.io/publication_types/3/</loc>
+      <lastmod>2018-11-08T10:13:35-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://joedaws.github.io/categories/</loc>
       <priority>0</priority>
     </url>
@@ -45,7 +94,17 @@
     
     <url>
     
+      <loc>https://joedaws.github.io/project/</loc>
+      <lastmod>2018-11-08T11:09:54-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://joedaws.github.io/publication_types/</loc>
+      <lastmod>2018-11-08T10:13:35-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -54,6 +113,69 @@
     <url>
     
       <loc>https://joedaws.github.io/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/clustering/</loc>
+      <lastmod>2018-11-08T11:09:54-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/convex-optimization/</loc>
+      <lastmod>2018-11-05T09:48:32-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/data-analysis/</loc>
+      <lastmod>2018-11-08T11:09:54-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/image-processing/</loc>
+      <lastmod>2018-11-08T10:13:35-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/machine-learning/</loc>
+      <lastmod>2018-11-07T15:23:38-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/neural-networks/</loc>
+      <lastmod>2018-11-07T15:23:38-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/optimization/</loc>
+      <lastmod>2018-11-08T10:13:35-05:00</lastmod>
       <priority>0</priority>
     </url>
     

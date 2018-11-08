@@ -1,1 +1,119 @@
-[]
+[
+  {
+    "authors": null,
+    "categories": null,
+    "content": "",
+    "date": 1541693394,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1541693394,
+    "objectID": "0156f00a03f247c62282583661cc8371",
+    "permalink": "https://joedaws.github.io/project/spectral-clustering-sns-target-data/",
+    "publishdate": "2018-11-08T11:09:54-05:00",
+    "relpermalink": "/project/spectral-clustering-sns-target-data/",
+    "section": "project",
+    "summary": "The spallation neurton source (SNS) is a consumable component which wears out due to radiation damage and cavitation erosion. We propose a spectral clustering based method to detect damage in the traget.",
+    "tags": [
+      "clustering",
+      "data-analysis"
+    ],
+    "title": "Spectral Clustering SNS Target Data",
+    "type": "project"
+  },
+  {
+    "authors": [
+      "Joseph Daws",
+      "Armenak Petrosyan",
+      "Hoang Tran",
+      "Clayton Webster"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1541690015,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1541690015,
+    "objectID": "52a989cbea29b5ac2cf3fd43ea5c9361",
+    "permalink": "https://joedaws.github.io/publication/weighted-l1-minimization-and-closed-trees/",
+    "publishdate": "2018-11-08T10:13:35-05:00",
+    "relpermalink": "/publication/weighted-l1-minimization-and-closed-trees/",
+    "section": "publication",
+    "summary": "In this work we propose a convex optimization approach, based on weighted l1-regularization, for reconstructing sparse wavelet representations. We show our proposed optimiza- tion problem is effective for solving the signal/image inpainting and denoising problems. The wavelet coefficients associated to the functional representation of the object of interest are obtained as the solution to this optimization problem constrained by either subsamples or noisy observations in the case of inpainting or denoising, respectively. We show that by choosing the weights to be the uniform norms of the wavelet functions the support of the recovered vector of coefficients forms a particular kind of index set, a closed tree. This kind of index set is consistent with the behavior of many real-world signals and images and therefore our approach applies to a wide class of signals. Furthermore, we illustrate the effectiveness of the proposed convex optimization problem by providing numerical examples using both orthonormal wavelets and a frame of wavelets. In addition, we provide analysis to show that the sample complexity associated with the weighted l1-regularized problem is smaller than the sample complexity of the l1-regularized problem.",
+    "tags": [
+      "image-processing",
+      "optimization"
+    ],
+    "title": "Weighted L1 Minimization and Closed Trees",
+    "type": "publication"
+  },
+  {
+    "authors": [
+      "Joseph Daws"
+    ],
+    "categories": [],
+    "content": " The architecture of a network depends on its application In practice, the design of neural networks is linked to their desired application. For instance, neural networks used for image classification typically involve convolutional kernels which extract local features. To my knowledge there is no clear theoretical justification of this choice of architecture. However, since there are successful image processing methods which exploit local and global image information simulaneously in a similar way to convolutional layers in a neural network, .e.g., LDMM and NONLOCAL MEANS.\nWhen designing a network to approximate a function it is therefore reasonable for the architecture of a proposed network to depend on a particular function approximation scheme. This choice also allows one to take advantage of the large body of theoretical work describing methods to approximate functions (of various levels of smoothness and dimension). I\u0026rsquo;m currently analyzing a network based on polynomial approximation of high-dimensional functions.\nCheck this post in the near future for some prelimary numerical results of this network.\n",
+    "date": 1541622218,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1541622218,
+    "objectID": "eb93e03777b3eb1a2f9a34fdbe58ddf9",
+    "permalink": "https://joedaws.github.io/post/designing-neural-networks/",
+    "publishdate": "2018-11-07T15:23:38-05:00",
+    "relpermalink": "/post/designing-neural-networks/",
+    "section": "post",
+    "summary": "The architecture of a network depends on its application In practice, the design of neural networks is linked to their desired application. For instance, neural networks used for image classification typically involve convolutional kernels which extract local features. To my knowledge there is no clear theoretical justification of this choice of architecture. However, since there are successful image processing methods which exploit local and global image information simulaneously in a similar way to convolutional layers in a neural network, .",
+    "tags": [
+      "machine-learning",
+      "neural-networks"
+    ],
+    "title": "Designing Neural Networks",
+    "type": "post"
+  },
+  {
+    "authors": [
+      "Joseph Daws"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1541613748,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1541613748,
+    "objectID": "21b08b2b8290943ef989744e1cfbe5f5",
+    "permalink": "https://joedaws.github.io/talk/imi-graduate-student-mini-conf/",
+    "publishdate": "2018-11-07T13:02:28-05:00",
+    "relpermalink": "/talk/imi-graduate-student-mini-conf/",
+    "section": "talk",
+    "summary": "In this work we propose a compressed sensing approach for the reconstruction of functions or images represented by their expansion in a wavelet basis, from only a small number of samples. The success of applying wavelet representations for image reconstruction and compression has inspired many sparse recovery techniques. However, these approaches can be improved by exploiting the connections between different levels of wavelet coefficients in the hierarchical wavelet basis to find significant coefficients. In particular, we show that the important wavelet coefficients for a certain class of functions and images are concentrated on a lower set (i.e., a downward closed tree), and present a weighted ℓ1 minimization technique which takes advantage of this fact in order to reduce the overall complexity of our proposed compressed sensing recovery. Following some of the results in our previous effort we also present theoretical estimates related to the sampling complexity of our scheme as compared to unweighted ℓ1 minimization. Several numerical examples are provided to show the effectiveness of this weighted ℓ1 minimization scheme for solving the image inpainting problem as compared to several other established solution techniques.",
+    "tags": [],
+    "title": "IMI Graduate Student Mini Conference",
+    "type": "talk"
+  },
+  {
+    "authors": null,
+    "categories": null,
+    "content": " Weighted $\\ell_1$-minimization In an upcoming work a convex optimization approach, based on weighted $\\ell_1$-regularization, is proposed for reconstructing sparse wavelet representations. We show our proposed optimization problem is effective for solving the signal/image inpainting and denoising problems. We take the funcational representation of an image or signal to be $$ f(y) = \\sum_{j \\in \\mathcal{J}} c_j \\Psi_j(y) . $$ The wavelet coefficients $c = (c_j)_{j \\in \\mathcal{J}}$ associated to the functional representation of the object of interest are obtained as minizers of\n$$ \\min_{c \\in \\mathbb{R}^N} \\lVert c \\rVert_{\\omega,1} + \\lVert Ac - f \\rVert_2, $$ where $f \\in \\mathbb{R}$ is either a vector $m$ subsamples or $m$ noisy observations.\nWe show that by choosing the weights to be the uniform norms of the wavelet functions, i.e., the $L^\\infty$-norm of $\\Psi_j$, the support of the recovered vector of coefficients forms a particular kind of index set, a closed tree.\nAn example of a closed tree. The solid edges form the closed tree.\nThis kind of index set is consistent with the behavior of many real-world signals and images and therefore our approach applies to a wide class of signals. Furthermore, the numerical examples below show the effectiveness of weighted $\\ell_1$-minimization. In addition, we have shown that the sample complexity associated with the weighted $\\ell_1$-regularized problem is smaller than the sample complexity of the unweighted problem. This analysis will appear in an upcoming paper.\nImage Inpainting Compare the recovery of a picture of flamingos using unweighted and weighted $\\ell_1$-minimization from a random sample of $8\\%$ of the pixels. The original image is a $972 \\times 1296$ pixel image. We used the Daubechies 3 db3 basis.\nImage De-noising The weighted $\\ell_1$-minimization problem can also be used to de-noise an image:\n",
+    "date": 1541429312,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1541429312,
+    "objectID": "e524fab433beb5ba38398f147447384b",
+    "permalink": "https://joedaws.github.io/project/image-inpainting/",
+    "publishdate": "2018-11-05T09:48:32-05:00",
+    "relpermalink": "/project/image-inpainting/",
+    "section": "project",
+    "summary": "Using weighted convex minimization to solve the image inpainting and de-noising problems.",
+    "tags": [
+      "optimization",
+      "convex-optimization",
+      "image-processing"
+    ],
+    "title": "Image Processing and Optimization",
+    "type": "project"
+  }
+]

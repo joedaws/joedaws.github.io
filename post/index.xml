@@ -12,5 +12,14 @@
 	<atom:link href="https://joedaws.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Designing Neural Networks</title>
+      <link>https://joedaws.github.io/post/designing-neural-networks/</link>
+      <pubDate>Wed, 07 Nov 2018 15:23:38 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/post/designing-neural-networks/</guid>
+      <description>The architecture of a network depends on its application In practice, the design of neural networks is linked to their desired application. For instance, neural networks used for image classification typically involve convolutional kernels which extract local features. To my knowledge there is no clear theoretical justification of this choice of architecture. However, since there are successful image processing methods which exploit local and global image information simulaneously in a similar way to convolutional layers in a neural network, .</description>
+    </item>
+    
   </channel>
 </rss>

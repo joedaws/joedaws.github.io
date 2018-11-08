@@ -36,14 +36,13 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://joedaws.github.io/home/about/</guid>
-      <description>Biography Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet.</description>
+      <description>Biography Joseph Daws is a graduate research assistant in the department of mathematics at the University of Tennessee Knoxville working with Professor Clayton Webster. Joseph is interested in problems at the intersection of approximation theory, inverse problems, image processing, optimization, and machine learning. His most recent work is concerned with studying how regularization affects the performance of the optimization problems at the heart of machine learnign and image processing.</description>
     </item>
     
     <item>
       <title>Skills</title>
       <link>https://joedaws.github.io/home/skills/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joedaws.github.io/home/skills/</guid>
       <description></description>
@@ -59,20 +58,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
     </item>
     
     <item>
-      <title>Selected Publications</title>
-      <link>https://joedaws.github.io/home/publications_selected/</link>
+      <title>Projects</title>
+      <link>https://joedaws.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://joedaws.github.io/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Publications</title>
-      <link>https://joedaws.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://joedaws.github.io/home/publications/</guid>
+      <guid>https://joedaws.github.io/home/projects/</guid>
       <description></description>
     </item>
     
@@ -104,11 +94,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>https://joedaws.github.io/home/projects/</link>
+      <title>Recent Publications</title>
+      <link>https://joedaws.github.io/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://joedaws.github.io/home/projects/</guid>
+      <guid>https://joedaws.github.io/home/publications/</guid>
       <description></description>
     </item>
     
@@ -120,6 +110,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
       <guid>https://joedaws.github.io/home/teaching/</guid>
       <description>This is an example of using the custom widget to create your own homepage section.
 To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>https://joedaws.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://joedaws.github.io/home/publications_selected/</guid>
+      <description></description>
     </item>
     
     <item>

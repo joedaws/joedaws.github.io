@@ -10,5 +10,128 @@
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Spectral Clustering SNS Target Data</title>
+      <link>https://joedaws.github.io/project/spectral-clustering-sns-target-data/</link>
+      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/project/spectral-clustering-sns-target-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weighted L1 Minimization and Closed Trees</title>
+      <link>https://joedaws.github.io/publication/weighted-l1-minimization-and-closed-trees/</link>
+      <pubDate>Thu, 08 Nov 2018 10:13:35 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/publication/weighted-l1-minimization-and-closed-trees/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing Neural Networks</title>
+      <link>https://joedaws.github.io/post/designing-neural-networks/</link>
+      <pubDate>Wed, 07 Nov 2018 15:23:38 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/post/designing-neural-networks/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-architecture-of-a-network-depends-on-its-application&#34;&gt;The architecture of a network depends on its application&lt;/h1&gt;
+
+&lt;p&gt;In practice, the design of neural networks is linked to their
+desired application. For instance, neural networks used for image
+classification typically involve
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Convolutional_neural_network&#34; target=&#34;_blank&#34;&gt;convolutional kernels&lt;/a&gt;
+which extract local features. To my knowledge there is no clear
+theoretical justification of this choice of architecture. However,
+since there are successful image processing methods which
+exploit local and global image information simulaneously in a similar
+way to convolutional layers in a neural network, .e.g.,
+&lt;a href=&#34;ftp://ftp.math.ucla.edu/pub/camreport/cam16-04.pdf&#34; target=&#34;_blank&#34;&gt;LDMM&lt;/a&gt; and
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/1467423&#34; target=&#34;_blank&#34;&gt;NONLOCAL MEANS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When designing a network to approximate a function it is therefore
+reasonable for the architecture of a proposed network to
+depend on a particular function approximation scheme.
+This choice also allows one to take advantage of the large body
+of theoretical work describing methods to
+approximate functions (of various levels of smoothness and dimension).
+I&amp;rsquo;m currently analyzing a network based on polynomial approximation of
+high-dimensional functions.&lt;/p&gt;
+
+&lt;p&gt;Check this post in the near future for
+some prelimary numerical results of this network.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IMI Graduate Student Mini Conference</title>
+      <link>https://joedaws.github.io/talk/imi-graduate-student-mini-conf/</link>
+      <pubDate>Wed, 07 Nov 2018 13:02:28 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/talk/imi-graduate-student-mini-conf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Processing and Optimization</title>
+      <link>https://joedaws.github.io/project/image-inpainting/</link>
+      <pubDate>Mon, 05 Nov 2018 09:48:32 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/project/image-inpainting/</guid>
+      <description>
+
+&lt;h1 id=&#34;weighted-ell-1-minimization&#34;&gt;Weighted $\ell_1$-minimization&lt;/h1&gt;
+
+&lt;p&gt;In an upcoming work a convex optimization approach,
+based on weighted $\ell_1$-regularization, is proposed
+for reconstructing sparse wavelet representations.
+We show our proposed optimization problem
+is effective for solving the signal/image inpainting and denoising problems.
+We take the funcational representation of an image or signal to be
+$$ f(y) = \sum_{j \in \mathcal{J}} c_j \Psi_j(y) . $$
+The wavelet coefficients $c = (c_j)_{j \in \mathcal{J}}$
+associated to the functional representation of the
+object of interest are obtained as minizers of&lt;br /&gt;
+$$ \min_{c \in \mathbb{R}^N} \lVert c \rVert_{\omega,1} + \lVert Ac - f \rVert_2, $$
+where $f \in \mathbb{R}$ is either a vector $m$ subsamples or $m$
+noisy observations.&lt;br /&gt;
+We show that by choosing the weights to be the uniform norms of the wavelet functions,
+i.e., the $L^\infty$-norm of $\Psi_j$,
+the support of the recovered vector of coefficients forms a particular kind of index set,
+a closed tree.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;closed_tree.png&#34; alt=&#34;Closed Tree&#34; /&gt;
+&lt;em&gt;An example of a closed tree. The solid edges form the closed tree.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This kind of index set is consistent with the behavior of many real-world signals and
+images and therefore our approach applies to a wide class of signals.
+Furthermore, the numerical examples below show the effectiveness
+of weighted $\ell_1$-minimization. In addition, we have shown
+that the sample complexity associated with the weighted
+$\ell_1$-regularized problem is smaller than the sample complexity
+of the unweighted problem. This analysis will appear in an upcoming paper.&lt;/p&gt;
+
+&lt;h2 id=&#34;image-inpainting&#34;&gt;Image Inpainting&lt;/h2&gt;
+
+&lt;p&gt;Compare the recovery of a picture of flamingos using unweighted and weighted
+$\ell_1$-minimization from a random sample of $8\%$ of the pixels.
+The original image is a $972 \times 1296$ pixel image. We used the
+&lt;a href=&#34;https://wikipedia.org/wiki/daubechies_wavelet&#34; target=&#34;_blank&#34;&gt;Daubechies 3&lt;/a&gt; &lt;em&gt;db3&lt;/em&gt; basis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;_fig_flamingos_orig.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;_fig_flamingos_unweighted_8p.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;_fig_flamingos_weighted_8p.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;image-de-noising&#34;&gt;Image De-noising&lt;/h2&gt;
+
+&lt;p&gt;The weighted $\ell_1$-minimization problem can also be used to de-noise an image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;_fig_lighthouse_noisy.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;_fig_lighthouse_unweighted_denoised.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;_fig_lighthouse_weighted_denoised.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

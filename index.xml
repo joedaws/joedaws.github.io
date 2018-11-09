@@ -119,17 +119,17 @@ $\ell_1$-minimization from a random sample of $8\%$ of the pixels.
 The original image is a $972 \times 1296$ pixel image. We used the
 &lt;a href=&#34;https://wikipedia.org/wiki/daubechies_wavelet&#34; target=&#34;_blank&#34;&gt;Daubechies 3&lt;/a&gt; &lt;em&gt;db3&lt;/em&gt; basis.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;_fig_flamingos_orig.png&#34; alt=&#34;original flamingos&#34; /&gt;
-&lt;img src=&#34;_fig_flamingos_unweighted_8p.png&#34; alt=&#34;unweighted flamingos&#34; /&gt;
-&lt;img src=&#34;_fig_flamingos_weighted_8p.png&#34; alt=&#34;weighted flamingos&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;fig_flamingos_orig.png&#34; alt=&#34;original flamingos&#34; /&gt;
+&lt;img src=&#34;fig_flamingos_unweighted_8p.png&#34; alt=&#34;unweighted flamingos&#34; /&gt;
+&lt;img src=&#34;fig_flamingos_weighted_8p.png&#34; alt=&#34;weighted flamingos&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;image-de-noising&#34;&gt;Image De-noising&lt;/h2&gt;
 
 &lt;p&gt;The weighted $\ell_1$-minimization problem can also be used to de-noise an image:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;_fig_lighthouse_noisy.png&#34; alt=&#34;original lighthouse&#34; /&gt;
-&lt;img src=&#34;_fig_lighthouse_unweighted_denoised.png&#34; alt=&#34;unweighted lighthouse&#34; /&gt;
-&lt;img src=&#34;_fig_lighthouse_weighted_denoised.png&#34; alt=&#34;weighted lighthouse&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;fig_lighthouse_noisy.png&#34; alt=&#34;original lighthouse&#34; /&gt;
+&lt;img src=&#34;fig_lighthouse_unweighted_denoised.png&#34; alt=&#34;unweighted lighthouse&#34; /&gt;
+&lt;img src=&#34;fig_lighthouse_weighted_denoised.png&#34; alt=&#34;weighted lighthouse&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

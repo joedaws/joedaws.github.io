@@ -13,7 +13,7 @@
     "publishdate": "2018-11-08T11:09:54-05:00",
     "relpermalink": "/project/spectral-clustering-sns-target-data/",
     "section": "project",
-    "summary": "The spallation neurton source (SNS) is a consumable component which wears out due to radiation damage and cavitation erosion. We propose a spectral clustering based method to detect damage in the traget.",
+    "summary": "The spallation neutron source (SNS) is a consumable component which wears out due to radiation damage and cavitation erosion. We propose a spectral clustering based method to detect damage in the target.",
     "tags": [
       "clustering",
       "data-analysis"

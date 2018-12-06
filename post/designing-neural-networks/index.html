@@ -15,7 +15,8 @@
   
     
   
-  <meta name="description" content="The architecture of a network depends on its application In practice, the design of neural networks is linked to their desired application. For instance, neural networks used for image classification typically involve convolutional kernels which extract local features. To my knowledge there is no clear theoretical justification of this choice of architecture. However, since there are successful image processing methods which exploit local and global image information simulaneously in a similar way to convolutional layers in a neural network, .">
+  <meta name="description" content="Towards a mathematical understanding of using neural networks for function approximaiton.  An artificial neural network (ANN) is a computational framework inspired by the interactions of neurons in the brain.
+ Recently many difficult problems have been effectively solved using algorithms and mathematical models which iteratively improve their performance based on data rather than explicitly finding a solution. Such methods, which primarily rely on data rather than explicit solution techniques, can be grouped together under the umbrella of Machine Learning.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://joedaws.github.io/post/designing-neural-networks/">
@@ -110,7 +111,8 @@
   <meta property="og:site_name" content="Joseph Daws">
   <meta property="og:url" content="https://joedaws.github.io/post/designing-neural-networks/">
   <meta property="og:title" content="Designing Neural Networks | Joseph Daws">
-  <meta property="og:description" content="The architecture of a network depends on its application In practice, the design of neural networks is linked to their desired application. For instance, neural networks used for image classification typically involve convolutional kernels which extract local features. To my knowledge there is no clear theoretical justification of this choice of architecture. However, since there are successful image processing methods which exploit local and global image information simulaneously in a similar way to convolutional layers in a neural network, .">
+  <meta property="og:description" content="Towards a mathematical understanding of using neural networks for function approximaiton.  An artificial neural network (ANN) is a computational framework inspired by the interactions of neurons in the brain.
+ Recently many difficult problems have been effectively solved using algorithms and mathematical models which iteratively improve their performance based on data rather than explicitly finding a solution. Such methods, which primarily rely on data rather than explicit solution techniques, can be grouped together under the umbrella of Machine Learning.">
   
   
     
@@ -273,18 +275,22 @@
 
 
 
-  
 
-  
-  
-  
-<div class="article-container pt-3">
-  <h1 itemprop="name">Designing Neural Networks</h1>
+<div class="article-header d-xl-none">
+  <img src="/post/designing-neural-networks/featured_hu4934300640ba9b81a6825d3e4dd62d77_32909_1600x400_fill_q90_box_center_2.png" class="article-banner" itemprop="image" alt="">
+  <span class="article-header-caption">A single layer artificial neural network</span>
+</div>
 
-  
 
-  
-    
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Designing Neural Networks</h1>
+
+        
+
+        
 
 <div class="article-metadata">
 
@@ -313,7 +319,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    6 min read
   </span>
   
 
@@ -322,6 +328,125 @@
 
   
   
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/neural-networks/">Neural-Networks</a>
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Designing%20Neural%20Networks&amp;url=https%3a%2f%2fjoedaws.github.io%2fpost%2fdesigning-neural-networks%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjoedaws.github.io%2fpost%2fdesigning-neural-networks%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjoedaws.github.io%2fpost%2fdesigning-neural-networks%2f&amp;title=Designing%20Neural%20Networks"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjoedaws.github.io%2fpost%2fdesigning-neural-networks%2f&amp;title=Designing%20Neural%20Networks"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Designing%20Neural%20Networks&amp;body=https%3a%2f%2fjoedaws.github.io%2fpost%2fdesigning-neural-networks%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/post/designing-neural-networks/featured_hu4934300640ba9b81a6825d3e4dd62d77_32909_680x500_fill_q90_box_center_2.png" itemprop="image" alt="">
+        <span class="article-header-caption">A single layer artificial neural network</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Designing Neural Networks</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Joseph Daws</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-11-07 15:23:38 -0500 EST" itemprop="datePublished">
+    <time datetime="2018-11-07 15:23:38 -0500 EST" itemprop="dateModified">
+      Nov 7, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Joseph D. Daws Jr.">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/neural-networks/">Neural-Networks</a>
+    
+  </span>
   
   
 
@@ -371,7 +496,6 @@
 
 </div>
 
-  
 </div>
 
 
@@ -381,7 +505,142 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h1 id="the-architecture-of-a-network-depends-on-its-application">The architecture of a network depends on its application</h1>
+<h1 id="towards-a-mathematical-understanding-of-using-neural-networks-for-function-approximaiton">Towards a mathematical understanding of using neural networks for function approximaiton.</h1>
+
+<blockquote>
+<p>An artificial neural network (ANN) is a computational framework
+inspired by the interactions of neurons in the brain.</p>
+</blockquote>
+
+<p>Recently many difficult problems have been effectively solved using
+algorithms and mathematical models which iteratively improve their
+performance based on data rather than explicitly finding a solution.
+Such methods, which primarily rely on data rather than explicit solution
+techniques, can be grouped together under the umbrella of <strong>Machine Learning</strong>.
+The field of machine learning is rapidly exanding and new results often
+draw on a diverse background of mathematical, statistical, and even physics based
+methods. However, many of its most dramatic successes involve neural networks.
+Some examples I find interesting are:</p>
+
+<ul>
+<li><a href="http://www.cs.toronto.edu/~fritz/absps/ncfast.pdf" target="_blank">Image Classification</a>
+&ndash; A neural network is trained to classify handwritten numbers using a
+dataset of pre-labelled images of handwritten numbers. It is even able
+to classify images of digits not contained in the training set</li>
+<li><a href="https://www.nature.com/articles/nature24270" target="_blank">Artificial intelligence</a>
+&ndash; Move predicition and selection for the game Go by a neural network.
+This network was able to beat a top level human player.</li>
+<li><a href="https://blog.openai.com/learning-dexterity/" target="_blank">Reinforced Learning</a>
+&ndash; A robtic hand controlled by a neural network is trained to manipulate
+a cube to requested positions. The network uses data from a camera to
+assess the current state of the cube and choose actions for the hand to
+perform in order to rotate it to a desired position.</li>
+</ul>
+
+<p>All three of these examples employ a neural network to solve a complex problem.</p>
+
+<p>There are many fundamental theoretical questions that reamined
+(partially) unanswered about ANN&rsquo;s, e.g.,</p>
+
+<ul>
+<li>All networks require some training, a process by which pairs of inputs and outputs
+are used to set the internal parameters of the model. A popular strategy for Training
+is accomplished by stochastic gradient descent
+<a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent" target="_blank">(SDG)</a>.
+The convergence of this optimization problem is not well
+quantified or well understood.</li>
+<li>Given a network with a particular architecture, how does one determine
+the class of functions it can express?
+Moreover, even if optimal parameters can be shown to exist, are they easy to learn?</li>
+<li>Under what conditions will a network generalize well to inputs and
+outputs not contained in the training set? Some networks experience
+very bad overfitting and do not make good predictions for new incoming data.</li>
+</ul>
+
+<p>In order to make sense of any of these theoretical considerations
+in a mathematical context it is useful to characterize ANN&rsquo;s as both
+functions and graphs.
+In this post we will consider designing a network to approximate a
+given analytic function $f$.
+As a function, the network can be interpreted as a mapping from $\mathbb{R}^d$ to
+$\mathbb{R}^k$ where $d$ is the number of inputs to the network and
+$k$ is the number of ouputs. Let
+$$u_{NN}:\mathbb{R}^d \rightarrow \mathbb{R}^k$$
+be the functional interpretation of the neural network approximating an
+analytic function $u$. The function $u_{NN}$ is computed by a
+combinging a series computations performed
+by constituent functions. The interactions between the constituent
+functions that make up the network can be described by a
+<a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" target="_blank">directed acylic graph</a>.
+The associated graph can be used to analyze the complexity of the
+network defined as the number of trainable parameters.</p>
+
+<p>Simply put, a neural network can be characterized as a function consisting of
+compositions and linear combinations of constituent functions called
+<strong>neurons</strong> which perform a computation of the form
+$$ \sigma \left( \sum_{i=1}^k w_i \cdot x_i  + b \right).$$</p>
+
+<ul>
+<li>$x_i$ &ndash; The <strong>inputs</strong> for the computation.
+They could be the result of computations performed by other neurons or
+raw input.</li>
+<li>$w_i$ &ndash; The <strong>weight</strong> associated to the incoming data $x_i$.</li>
+<li>$\sigma$ &ndash; A nonlinear function called the <strong>activation function</strong>.</li>
+<li>$b$ &ndash; A number called the <strong>bias</strong> of the neuron.</li>
+</ul>
+
+<h2 id="nonlinear-functions-and-graphs">Nonlinear functions and graphs</h2>
+
+<p>Below is a simple example showing the dual characterization
+of a single hidden layer ANN.</p>
+
+<p><img src="featured.png" alt="single layer network" />
+<em>A single hidden layer network with three neurons.</em></p>
+
+<p>This graph depicts how each of the constituent computations are used
+to form the final output of th network. Here we call the function
+induced by the network $f$. The function $f$ maps the input $x$
+to the output $f(x)$ and is computed as a linear combination of
+the computations performed in the hidden layer.
+One can also write $f$ in a way more easily recognized as a funciton.</p>
+
+<p><img src="network_function.png" alt="functional network" />
+<em>The network as a function.</em></p>
+
+<p>This representation makes explicit the mapping how $f$ maps the input
+$x$ to the output $f(x)$. It also shows how the mapping induced
+by the network depends entirely on the choice of the weights, biases and
+the activiation function. Choosing these parameters directly determines
+how well the network $f$ performs its task.</p>
+
+<p>Suppose that we wish to design a network for function approximation,
+i.e., one is tasked to chose the parameters of $f$ so that it
+produces the same input&ndash;output pairs as a function
+$g:\mathbb{R} \rightarrow \mathbb{R}$.
+The problem of finding an optimal approximation of $g$ is then finding
+the optimal parameters for $f$ so that the quantity $error$ is as small
+as possible where
+$$ error = ||f - g||$$
+for an appropriately chosen norm $|| \cdot ||$.
+Notice that the approximation power of $f$ also depends on the choice of
+$\sigma$. It is possible to consider $\sigma$ as a parameter, but there are
+several established choices for $\sigma$ that are widely used, see e.g.
+<a href="https://en.wikipedia.org/wiki/Activation_function" target="_blank">activation functions</a>.
+Here I will consider using the so called Rectified Linear Unit (ReLU)
+activation function.</p>
+
+<p><img src="relu.png" alt="relu" />
+<em>The ReLU actication function is a piecewise linear function.</em></p>
+
+<p>The network $f$ is a very simple network and in practice shallow networks
+have been shown have limited usage. In fact, it is known that deep networks, i.e.
+networks with more than one hidden layer, are more expressive than
+shallow in the sense that they require less complex structure in order to
+express a given funciton. See the work of
+<a href="https://pdfs.semanticscholar.org/694a
+/d455c119c0d07036792b80abbf5488a9a4ca.pdf" target="_blank">Mhaskar</a>.</p>
+
+<h2 id="the-architecture-of-a-network-depends-on-its-application">The architecture of a network depends on its application</h2>
 
 <p>In practice, the design of neural networks is linked to their
 desired application. For instance, neural networks used for image
@@ -397,15 +656,17 @@ way to convolutional layers in a neural network, .e.g.,
 
 <p>When designing a network to approximate a function it is therefore
 reasonable for the architecture of a proposed network to
-depend on a particular function approximation scheme.
+depend on a particular function approximation scheme or at least
+be inspired by an approximation scheme.
 This choice also allows one to take advantage of the large body
 of theoretical work describing methods to
 approximate functions (of various levels of smoothness and dimension).
 I&rsquo;m currently analyzing a network based on polynomial approximation of
-high-dimensional functions.</p>
+high-dimensional functions as well as implementing one.</p>
 
 <p>Check this post in the near future for
-some prelimary numerical results of this network.</p>
+some prelimary numerical results of this network as well as some
+theoretical estimates of its expressive power.</p>
 
     </div>
 

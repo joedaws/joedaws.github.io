@@ -11,5 +11,14 @@
 	<atom:link href="https://joedaws.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Neural-Networks</title>
+      <link>https://joedaws.github.io/categories/neural-networks/</link>
+      <pubDate>Wed, 07 Nov 2018 15:23:38 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/categories/neural-networks/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

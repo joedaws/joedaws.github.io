@@ -15,7 +15,7 @@
   
     
   
-  <meta name="description" content="Towards a mathematical understanding of using neural networks for function approximaiton.  An artificial neural network (ANN) is a computational framework inspired by the interactions of neurons in the brain.
+  <meta name="description" content="Towards a mathematical understanding of using neural networks for function approximation.  An artificial neural network (ANN) is a computational framework inspired by the interactions of neurons in the brain.
  Recently many difficult problems have been effectively solved using algorithms and mathematical models which iteratively improve their performance based on data rather than explicitly finding a solution. Such methods, which primarily rely on data rather than explicit solution techniques, can be grouped together under the umbrella of Machine Learning.">
 
   
@@ -111,7 +111,7 @@
   <meta property="og:site_name" content="Joseph Daws">
   <meta property="og:url" content="https://joedaws.github.io/post/designing-neural-networks/">
   <meta property="og:title" content="Designing Neural Networks | Joseph Daws">
-  <meta property="og:description" content="Towards a mathematical understanding of using neural networks for function approximaiton.  An artificial neural network (ANN) is a computational framework inspired by the interactions of neurons in the brain.
+  <meta property="og:description" content="Towards a mathematical understanding of using neural networks for function approximation.  An artificial neural network (ANN) is a computational framework inspired by the interactions of neurons in the brain.
  Recently many difficult problems have been effectively solved using algorithms and mathematical models which iteratively improve their performance based on data rather than explicitly finding a solution. Such methods, which primarily rely on data rather than explicit solution techniques, can be grouped together under the umbrella of Machine Learning.">
   
   
@@ -505,7 +505,7 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h1 id="towards-a-mathematical-understanding-of-using-neural-networks-for-function-approximaiton">Towards a mathematical understanding of using neural networks for function approximaiton.</h1>
+<h1 id="towards-a-mathematical-understanding-of-using-neural-networks-for-function-approximation">Towards a mathematical understanding of using neural networks for function approximation.</h1>
 
 <blockquote>
 <p>An artificial neural network (ANN) is a computational framework
@@ -526,12 +526,12 @@ Some examples I find interesting are:</p>
 <li><a href="http://www.cs.toronto.edu/~fritz/absps/ncfast.pdf" target="_blank">Image Classification</a>
 &ndash; A neural network is trained to classify handwritten numbers using a
 dataset of pre-labelled images of handwritten numbers. It is even able
-to classify images of digits not contained in the training set</li>
+to classify images of digits not contained in the training set.</li>
 <li><a href="https://www.nature.com/articles/nature24270" target="_blank">Artificial intelligence</a>
-&ndash; Move predicition and selection for the game Go by a neural network.
+&ndash; Move prediction and selection for the game &ldquo;Go&rdquo; by a neural network.
 This network was able to beat a top level human player.</li>
 <li><a href="https://blog.openai.com/learning-dexterity/" target="_blank">Reinforced Learning</a>
-&ndash; A robtic hand controlled by a neural network is trained to manipulate
+&ndash; A robotic hand controlled by a neural network is trained to manipulate
 a cube to requested positions. The network uses data from a camera to
 assess the current state of the cube and choose actions for the hand to
 perform in order to rotate it to a desired position.</li>
@@ -539,12 +539,12 @@ perform in order to rotate it to a desired position.</li>
 
 <p>All three of these examples employ a neural network to solve a complex problem.</p>
 
-<p>There are many fundamental theoretical questions that reamined
-(partially) unanswered about ANN&rsquo;s, e.g.,</p>
+<p>There are many fundamental theoretical questions that remain
+(partially) unanswered about ANNs, e.g.,</p>
 
 <ul>
 <li>All networks require some training, a process by which pairs of inputs and outputs
-are used to set the internal parameters of the model. A popular strategy for Training
+are used to set the internal parameters of the model. A popular strategy for training
 is accomplished by stochastic gradient descent
 <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent" target="_blank">(SDG)</a>.
 The convergence of this optimization problem is not well
@@ -568,7 +568,7 @@ $k$ is the number of ouputs. Let
 $$u_{NN}:\mathbb{R}^d \rightarrow \mathbb{R}^k$$
 be the functional interpretation of the neural network approximating an
 analytic function $u$. The function $u_{NN}$ is computed by a
-combinging a series computations performed
+combining a series computations performed
 by constituent functions. The interactions between the constituent
 functions that make up the network can be described by a
 <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" target="_blank">directed acylic graph</a>.
@@ -584,7 +584,7 @@ $$ \sigma \left( \sum_{i=1}^k w_i \cdot x_i  + b \right).$$</p>
 <li>$x_i$ &ndash; The <strong>inputs</strong> for the computation.
 They could be the result of computations performed by other neurons or
 raw input.</li>
-<li>$w_i$ &ndash; The <strong>weight</strong> associated to the incoming data $x_i$.</li>
+<li>$w_i$ &ndash; The <strong>weight</strong> associated with the incoming data $x_i$.</li>
 <li>$\sigma$ &ndash; A nonlinear function called the <strong>activation function</strong>.</li>
 <li>$b$ &ndash; A number called the <strong>bias</strong> of the neuron.</li>
 </ul>
@@ -598,11 +598,11 @@ of a single hidden layer ANN.</p>
 <em>A single hidden layer network with three neurons.</em></p>
 
 <p>This graph depicts how each of the constituent computations are used
-to form the final output of th network. Here we call the function
+to form the final output of the network. Here we call the function
 induced by the network $f$. The function $f$ maps the input $x$
 to the output $f(x)$ and is computed as a linear combination of
 the computations performed in the hidden layer.
-One can also write $f$ in a way more easily recognized as a funciton.</p>
+One can also write $f$ so that it is easily recognized as a funciton.</p>
 
 <p><img src="network_function.png" alt="functional network" />
 <em>The network as a function.</em></p>
@@ -610,11 +610,11 @@ One can also write $f$ in a way more easily recognized as a funciton.</p>
 <p>This representation makes explicit the mapping how $f$ maps the input
 $x$ to the output $f(x)$. It also shows how the mapping induced
 by the network depends entirely on the choice of the weights, biases and
-the activiation function. Choosing these parameters directly determines
+the activation function. Choosing these parameters directly determines
 how well the network $f$ performs its task.</p>
 
 <p>Suppose that we wish to design a network for function approximation,
-i.e., one is tasked to chose the parameters of $f$ so that it
+i.e., one is tasked to choose the parameters of $f$ so that it
 produces the same input&ndash;output pairs as a function
 $g:\mathbb{R} \rightarrow \mathbb{R}$.
 The problem of finding an optimal approximation of $g$ is then finding
@@ -632,8 +632,9 @@ activation function.</p>
 <p><img src="relu.png" alt="relu" />
 <em>The ReLU actication function is a piecewise linear function.</em></p>
 
-<p>The network $f$ is a very simple network and in practice shallow networks
-have been shown have limited usage. In fact, it is known that deep networks, i.e.
+<p>The network $f$ is a very simple network. Networks with a single hidden
+layer are called shallow networks and in practice shallow networks
+have been shown to have limited usage. In fact, it is known that deep networks, i.e.
 networks with more than one hidden layer, are more expressive than
 shallow in the sense that they require less complex structure in order to
 express a given funciton. See the work of
@@ -649,7 +650,7 @@ classification typically involve
 which extract local features. To my knowledge there is no clear
 theoretical justification of this choice of architecture. However,
 since there are successful image processing methods which
-exploit local and global image information simulaneously in a similar
+exploit local and global image information simultaneously in a similar
 way to convolutional layers in a neural network, .e.g.,
 <a href="ftp://ftp.math.ucla.edu/pub/camreport/cam16-04.pdf" target="_blank">LDMM</a> and
 <a href="https://ieeexplore.ieee.org/document/1467423" target="_blank">NONLOCAL MEANS</a>.</p>
@@ -665,7 +666,7 @@ I&rsquo;m currently analyzing a network based on polynomial approximation of
 high-dimensional functions as well as implementing one.</p>
 
 <p>Check this post in the near future for
-some prelimary numerical results of this network as well as some
+some preliminary numerical results of this network as well as some
 theoretical estimates of its expressive power.</p>
 
     </div>

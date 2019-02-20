@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Networks with Binary Tree Architecture</title>
+      <link>https://joedaws.github.io/post/binary-tree-network/</link>
+      <pubDate>Mon, 14 Jan 2019 11:36:57 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/post/binary-tree-network/</guid>
+      <description>Binary Trees Binary trees are both interesting from a purely graph theorectic point of view as well as in application. Their usefulness is evident by their wide use as a model for organization in a wide variety of applications. For example, they are used to describe directory hierachies in file systems, to store data so that it may be effeciently queried and to describe and organize the possible game states such as all possible chess matches.</description>
+    </item>
+    
+    <item>
       <title>Designing Neural Networks</title>
       <link>https://joedaws.github.io/post/designing-neural-networks/</link>
       <pubDate>Wed, 07 Nov 2018 15:23:38 -0500</pubDate>

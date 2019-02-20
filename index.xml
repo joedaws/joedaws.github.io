@@ -11,6 +11,72 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>SIAM CSE 2019 Rom Minisymposium</title>
+      <link>https://joedaws.github.io/talk/siam-cse-2019-rom-minisymposium/</link>
+      <pubDate>Wed, 20 Feb 2019 08:58:37 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/talk/siam-cse-2019-rom-minisymposium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networks with Binary Tree Architecture</title>
+      <link>https://joedaws.github.io/post/binary-tree-network/</link>
+      <pubDate>Mon, 14 Jan 2019 11:36:57 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/post/binary-tree-network/</guid>
+      <description>
+
+&lt;h2 id=&#34;binary-trees&#34;&gt;Binary Trees&lt;/h2&gt;
+
+&lt;p&gt;Binary trees are both interesting from a purely graph theorectic point of view
+as well as in application.
+Their usefulness is evident by their wide use as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_structure&#34; target=&#34;_blank&#34;&gt;model&lt;/a&gt;
+for organization in a wide variety of applications.
+For example, they are used to describe directory
+hierachies in file systems, to store data so that it may be effeciently
+queried and to describe and organize the possible game states
+such as all possible chess matches.&lt;/p&gt;
+
+&lt;p&gt;In this article we will discuss a class of functions which
+is composed of compositions of simpler functions whose
+interaction is described by a binary tree. Consider
+the following diagram of a binary tree.&lt;/p&gt;
+
+&lt;p&gt;INSERT DIAGRAM&lt;/p&gt;
+
+&lt;p&gt;This graph corresponds to the function
+$H:\mathcal{R}^d \rightarrow \mathcal{R}$ given by&lt;/p&gt;
+
+&lt;p&gt;$$
+H(x_1,\dots,x_d) := h_{\nu_0}(h_{\nu_{1}}(x_1,x_2),
+                                  h_{\nu_{2}}(x_3,x_4))
+$$&lt;/p&gt;
+
+&lt;p&gt;some functions are compositions of other functions
+have a so-called binary tree structure.&lt;/p&gt;
+
+&lt;h2 id=&#34;polynoials-as-products&#34;&gt;Polynoials as Products&lt;/h2&gt;
+
+&lt;p&gt;An example of a polynomial with locally hierarchical compositional structure
+was considered by &lt;a href=&#34;https://arxiv.org/abs/1611.00740&#34; target=&#34;_blank&#34;&gt;Poggio et al.&lt;/a&gt;.
+They consider the polynomial
+$$ Q(x_1,x_2,\dots,x_N) $$&lt;/p&gt;
+
+&lt;p&gt;Polynomials can be written as the product of
+complex numbers of the form $(x_i - r_j)$.&lt;/p&gt;
+
+&lt;h2 id=&#34;locally-hierarchical-basis-functions&#34;&gt;Locally Hierarchical Basis Functions&lt;/h2&gt;
+
+&lt;p&gt;Review the theory of Poggio et al for describing the
+expressibility of binvary tree neural networks.&lt;/p&gt;
+
+&lt;p&gt;Of course, all of this can be generalized to a $k-ary$ tree, i.e.,
+a tree where each node has at most $k$ children.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spectral Clustering SNS Target Data</title>
       <link>https://joedaws.github.io/project/spectral-clustering-sns-target-data/</link>
       <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
@@ -36,7 +102,7 @@
       <guid>https://joedaws.github.io/post/designing-neural-networks/</guid>
       <description>
 
-&lt;h1 id=&#34;towards-a-mathematical-understanding-of-using-neural-networks-for-function-approximation&#34;&gt;Towards a mathematical understanding of using neural networks for function approximation.&lt;/h1&gt;
+&lt;h2 id=&#34;towards-a-mathematical-understanding-of-using-neural-networks-for-function-approximation&#34;&gt;Towards a mathematical understanding of using neural networks for function approximation.&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;An artificial neural network (ANN) is a computational framework

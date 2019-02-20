@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network-architecture on Joseph Daws</title>
+    <link>https://joedaws.github.io/tags/network-architecture/</link>
+    <description>Recent content in network-architecture on Joseph Daws</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 14 Jan 2019 11:36:57 -0500</lastBuildDate>
+    
+	<atom:link href="https://joedaws.github.io/tags/network-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Networks with Binary Tree Architecture</title>
+      <link>https://joedaws.github.io/post/binary-tree-network/</link>
+      <pubDate>Mon, 14 Jan 2019 11:36:57 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/post/binary-tree-network/</guid>
+      <description>Binary Trees Binary trees are both interesting from a purely graph theorectic point of view as well as in application. Their usefulness is evident by their wide use as a model for organization in a wide variety of applications. For example, they are used to describe directory hierachies in file systems, to store data so that it may be effeciently queried and to describe and organize the possible game states such as all possible chess matches.</description>
+    </item>
+    
+  </channel>
+</rss>

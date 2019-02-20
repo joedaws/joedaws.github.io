@@ -1,5 +1,56 @@
 [
   {
+    "authors": [
+      "Joseph Daws",
+      "Armenak Petrosyan",
+      "Hoang Tran",
+      "Clayton Webster"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1550671117,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1550671117,
+    "objectID": "748678c9397a1f785af3c14a84eee0d6",
+    "permalink": "https://joedaws.github.io/talk/siam-cse-2019-rom-minisymposium/",
+    "publishdate": "2019-02-20T08:58:37-05:00",
+    "relpermalink": "/talk/siam-cse-2019-rom-minisymposium/",
+    "section": "talk",
+    "summary": "Real-world images and signals are known to be sparse in a wavelet basis. In this work, we propose a convex optimization approach, based on weighted l1-regularization, for reconstructing a signal of interest by identifying the coefficients in a sparse wavelet approximation. The vector of wavelet coefficients that form this approximation is obtained by finding the minimizer to our proposed weighted optimization problem where the weights are chosen to be the uniform norms of the wavelet basis functions. We illustrate the effectiveness of this method by solving the image inpainting and image denoising problems. The constraints of the optimization problem are either a set of subsamples in the case of the inpainting problem or a set of noisy observations in the case of the denoising problem.",
+    "tags": [],
+    "title": "SIAM CSE 2019 Rom Minisymposium",
+    "type": "talk"
+  },
+  {
+    "authors": [
+      "Joseph Daws"
+    ],
+    "categories": [
+      "Neural-Networks"
+    ],
+    "content": " Binary Trees Binary trees are both interesting from a purely graph theorectic point of view as well as in application. Their usefulness is evident by their wide use as a model for organization in a wide variety of applications. For example, they are used to describe directory hierachies in file systems, to store data so that it may be effeciently queried and to describe and organize the possible game states such as all possible chess matches.\nIn this article we will discuss a class of functions which is composed of compositions of simpler functions whose interaction is described by a binary tree. Consider the following diagram of a binary tree.\nINSERT DIAGRAM\nThis graph corresponds to the function $H:\\mathcal{R}^d \\rightarrow \\mathcal{R}$ given by\n$$ H(x_1,\\dots,x_d) := h_{\\nu_0}(h_{\\nu_{1}}(x_1,x_2), h_{\\nu_{2}}(x_3,x_4)) $$\nsome functions are compositions of other functions have a so-called binary tree structure.\nPolynoials as Products An example of a polynomial with locally hierarchical compositional structure was considered by Poggio et al.. They consider the polynomial $$ Q(x_1,x_2,\\dots,x_N) $$\nPolynomials can be written as the product of complex numbers of the form $(x_i - r_j)$.\nLocally Hierarchical Basis Functions Review the theory of Poggio et al for describing the expressibility of binvary tree neural networks.\nOf course, all of this can be generalized to a $k-ary$ tree, i.e., a tree where each node has at most $k$ children.\n",
+    "date": 1547483817,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1547483817,
+    "objectID": "64067b5be8b009f1bee67e2454493c28",
+    "permalink": "https://joedaws.github.io/post/binary-tree-network/",
+    "publishdate": "2019-01-14T11:36:57-05:00",
+    "relpermalink": "/post/binary-tree-network/",
+    "section": "post",
+    "summary": "Binary Trees Binary trees are both interesting from a purely graph theorectic point of view as well as in application. Their usefulness is evident by their wide use as a model for organization in a wide variety of applications. For example, they are used to describe directory hierachies in file systems, to store data so that it may be effeciently queried and to describe and organize the possible game states such as all possible chess matches.",
+    "tags": [
+      "neural-networks",
+      "network-architecture",
+      "machine-learning"
+    ],
+    "title": "Networks with Binary Tree Architecture",
+    "type": "post"
+  },
+  {
     "authors": null,
     "categories": null,
     "content": "",

@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A Deep Neural Network Architecture Inspired by Polynomial Approximation</title>
+      <link>https://joedaws.github.io/talk/at16-vanderbilt/</link>
+      <pubDate>Mon, 13 May 2019 16:40:32 -0400</pubDate>
+      
+      <guid>https://joedaws.github.io/talk/at16-vanderbilt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SIAM CSE 2019 Rom Minisymposium</title>
       <link>https://joedaws.github.io/talk/siam-cse-2019-rom-minisymposium/</link>
       <pubDate>Wed, 20 Feb 2019 08:58:37 -0500</pubDate>
@@ -20,59 +29,66 @@
     </item>
     
     <item>
-      <title>Networks with Binary Tree Architecture</title>
+      <title>Polynomials, Binary Trees and Gradient Descent</title>
       <link>https://joedaws.github.io/post/binary-tree-network/</link>
       <pubDate>Mon, 14 Jan 2019 11:36:57 -0500</pubDate>
       
       <guid>https://joedaws.github.io/post/binary-tree-network/</guid>
       <description>
 
-&lt;h2 id=&#34;binary-trees&#34;&gt;Binary Trees&lt;/h2&gt;
+&lt;h1 id=&#34;nonlinear-approximation&#34;&gt;Nonlinear Approximation&lt;/h1&gt;
 
-&lt;p&gt;Binary trees are both interesting from a purely graph theorectic point of view
-as well as in application.
-Their usefulness is evident by their wide use as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_structure&#34; target=&#34;_blank&#34;&gt;model&lt;/a&gt;
-for organization in a wide variety of applications.
-For example, they are used to describe directory
-hierachies in file systems, to store data so that it may be effeciently
-queried and to describe and organize the possible game states
-such as all possible chess matches.&lt;/p&gt;
+&lt;p&gt;As described in my previous &lt;a href=&#34;https://joedaws.github.io/post/designing-neural-networks/&#34; title=&#34;Neural Network Design&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt;
+Neural networks have emerged as a very powerful tool for constructing
+nonlinear functions in high-dimensions. They are known to be very expressive
+in the sense that the class of functions they can approximate is very wide.
+However, in order to cosntruct an approximation of a given function
+a very large number of network parameters must be determined.
+This is espcially true for Deep Neural Networks (DNNs).
+Because DNNs have many parameters and because the functions
+assocaited with solving tasks like image classification
+many be quite complicated, training can be very difficult.
+Although many aspects of neural network are new (such as fast training algorithms
+implementable on a GPU) their expressive power and ability to appoximate
+has been considered for a long time, but I personally haven&amp;rsquo;t seen
+many works which make explicit connections between the powerful
+results of classical approximation theory to expressibility results for
+neural networks. Below is an outline of one way in which polynomial approximation
+may be able to help networks approximate difficult function. By constructing
+a network which can approximate a polynomial we can take advantage of
+existing polynomial approximate results. On the other hand since
+networks are so expressive, given a polynoial approximation,
+we can generate a network which is first initialized to take on the behavior of
+the polynomial, then trained to find an even better approximation.&lt;/p&gt;
 
-&lt;p&gt;In this article we will discuss a class of functions which
-is composed of compositions of simpler functions whose
-interaction is described by a binary tree. Consider
-the following diagram of a binary tree.&lt;/p&gt;
+&lt;h2 id=&#34;polynomial-approximation&#34;&gt;Polynomial Approximation&lt;/h2&gt;
 
-&lt;p&gt;INSERT DIAGRAM&lt;/p&gt;
+&lt;p&gt;Polynomials are natural objects of interest in many different areas of mathematics.
+A generic degree $n$ polynomial $P_n$ is often written
+$$ P_n(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n. $$
+Written in this way the polynomial $P_n$ is completely characterized
+by its coefficients $a_i$ for $i=0,&amp;hellip;,n$.
+Therefore, finding a suitable polynomial approximation is equivalent to
+identifying the correct coefficients.&lt;/p&gt;
 
-&lt;p&gt;This graph corresponds to the function
-$H:\mathcal{R}^d \rightarrow \mathcal{R}$ given by&lt;/p&gt;
-
-&lt;p&gt;$$
-H(x_1,\dots,x_d) := h_{\nu_0}(h_{\nu_{1}}(x_1,x_2),
-                                  h_{\nu_{2}}(x_3,x_4))
-$$&lt;/p&gt;
-
-&lt;p&gt;some functions are compositions of other functions
-have a so-called binary tree structure.&lt;/p&gt;
-
-&lt;h2 id=&#34;polynoials-as-products&#34;&gt;Polynoials as Products&lt;/h2&gt;
-
-&lt;p&gt;An example of a polynomial with locally hierarchical compositional structure
-was considered by &lt;a href=&#34;https://arxiv.org/abs/1611.00740&#34; target=&#34;_blank&#34;&gt;Poggio et al.&lt;/a&gt;.
-They consider the polynomial
-$$ Q(x_1,x_2,\dots,x_N) $$&lt;/p&gt;
-
-&lt;p&gt;Polynomials can be written as the product of
-complex numbers of the form $(x_i - r_j)$.&lt;/p&gt;
-
-&lt;h2 id=&#34;locally-hierarchical-basis-functions&#34;&gt;Locally Hierarchical Basis Functions&lt;/h2&gt;
-
-&lt;p&gt;Review the theory of Poggio et al for describing the
-expressibility of binvary tree neural networks.&lt;/p&gt;
-
-&lt;p&gt;Of course, all of this can be generalized to a $k-ary$ tree, i.e.,
-a tree where each node has at most $k$ children.&lt;/p&gt;
+&lt;p&gt;According to the fundamental theorem of algebra
+Suppose that you know a root of the polynomial $P$ is $r$. Then
+it is possible to write
+$P(x) = (x-r)Q(x)$ in light of our observation about numbers and
+since $x-r = 0$ when $x=r$ for some other polynomials $Q$.
+Iterating this process we can write polynonials as
+a product of $n$ numbers of the form $(x-r_i)$ for $i=1,\dots,n$.
+This fact is known as the &lt;strong&gt;Fundamental Theorem of Algebra&lt;/strong&gt;.
+It is known that every degree $n$ polynomial can be written
+$$ P_n(x) = \Pi_{i=1}^n (x - r_i) $$
+for $n$ complex numbers $r_i$.
+We now how two representations of $P_n(x)$i. One written
+entirely as a linear combination of the powers of $x$ and the other
+as products of affine functions $(x-r_i)$.
+Each representation is equally valid and has its own usefulness.
+There may also be other interesting representations of polynomials
+which involve not only products and linear combinations but also
+compositions of polynomials.&lt;/p&gt;
 </description>
     </item>
     

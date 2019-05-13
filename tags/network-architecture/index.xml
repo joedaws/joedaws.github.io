@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>Networks with Binary Tree Architecture</title>
+      <title>Polynomials, Binary Trees and Gradient Descent</title>
       <link>https://joedaws.github.io/post/binary-tree-network/</link>
       <pubDate>Mon, 14 Jan 2019 11:36:57 -0500</pubDate>
       
       <guid>https://joedaws.github.io/post/binary-tree-network/</guid>
-      <description>Binary Trees Binary trees are both interesting from a purely graph theorectic point of view as well as in application. Their usefulness is evident by their wide use as a model for organization in a wide variety of applications. For example, they are used to describe directory hierachies in file systems, to store data so that it may be effeciently queried and to describe and organize the possible game states such as all possible chess matches.</description>
+      <description>Nonlinear Approximation As described in my previous post Neural networks have emerged as a very powerful tool for constructing nonlinear functions in high-dimensions. They are known to be very expressive in the sense that the class of functions they can approximate is very wide. However, in order to cosntruct an approximation of a given function a very large number of network parameters must be determined. This is espcially true for Deep Neural Networks (DNNs).</description>
     </item>
     
   </channel>

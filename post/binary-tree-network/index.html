@@ -15,7 +15,7 @@
   
     
   
-  <meta name="description" content="Nonlinear Approximation As described in my previous post Neural networks have emerged as a very powerful tool for constructing nonlinear functions in high-dimensions. They are known to be very expressive in the sense that the class of functions they can approximate is very wide. However, in order to cosntruct an approximation of a given function a very large number of network parameters must be determined. This is espcially true for Deep Neural Networks (DNNs).">
+  <meta name="description" content="Polynomial approximation can inform network design The following is a breif discussion of work found in this preprint which has been submitted to NeurIPS 2019. In this post I&rsquo;ve left out many details. If you are interested in these details please see the preprint. As described in my previous post Neural networks have emerged as a very powerful tool for constructing nonlinear functions in high-dimensions. They are known to be very expressive in the sense that the class of functions they can approximate is very wide.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://joedaws.github.io/post/binary-tree-network/">
@@ -109,24 +109,24 @@
   
   <meta property="og:site_name" content="Joseph Daws">
   <meta property="og:url" content="https://joedaws.github.io/post/binary-tree-network/">
-  <meta property="og:title" content="Polynomials, Binary Trees and Gradient Descent | Joseph Daws">
-  <meta property="og:description" content="Nonlinear Approximation As described in my previous post Neural networks have emerged as a very powerful tool for constructing nonlinear functions in high-dimensions. They are known to be very expressive in the sense that the class of functions they can approximate is very wide. However, in order to cosntruct an approximation of a given function a very large number of network parameters must be determined. This is espcially true for Deep Neural Networks (DNNs).">
+  <meta property="og:title" content="Polynomial Inspired Neural Network Design and Initiailzation | Joseph Daws">
+  <meta property="og:description" content="Polynomial approximation can inform network design The following is a breif discussion of work found in this preprint which has been submitted to NeurIPS 2019. In this post I&rsquo;ve left out many details. If you are interested in these details please see the preprint. As described in my previous post Neural networks have emerged as a very powerful tool for constructing nonlinear functions in high-dimensions. They are known to be very expressive in the sense that the class of functions they can approximate is very wide.">
   
   
     
   <meta property="og:image" content="https://joedaws.github.io/img/joe_pic_grad.JPG">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-01-14T11:36:57-05:00">
+  <meta property="article:published_time" content="2019-05-14T11:36:57-05:00">
   
-  <meta property="article:modified_time" content="2019-01-14T11:36:57-05:00">
-  
-
+  <meta property="article:modified_time" content="2019-05-14T11:36:57-05:00">
   
 
   
 
-  <title>Polynomials, Binary Trees and Gradient Descent | Joseph Daws</title>
+  
+
+  <title>Polynomial Inspired Neural Network Design and Initiailzation | Joseph Daws</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -279,7 +279,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Polynomials, Binary Trees and Gradient Descent</h1>
+  <h1 itemprop="name">Polynomial Inspired Neural Network Design and Initiailzation</h1>
 
   
 
@@ -301,9 +301,9 @@
 
   <span class="article-date">
     
-    <meta content="2019-01-14 11:36:57 -0500 EST" itemprop="datePublished">
-    <time datetime="2019-01-14 11:36:57 -0500 EST" itemprop="dateModified">
-      Jan 14, 2019
+    <meta content="2019-05-14 11:36:57 -0500 -0500" itemprop="datePublished">
+    <time datetime="2019-05-14 11:36:57 -0500 -0500" itemprop="dateModified">
+      May 14, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -313,7 +313,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -339,7 +339,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Polynomials%2c%20Binary%20Trees%20and%20Gradient%20Descent&amp;url=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f"
+         href="https://twitter.com/intent/tweet?text=Polynomial%20Inspired%20Neural%20Network%20Design%20and%20Initiailzation&amp;url=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
@@ -353,21 +353,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f&amp;title=Polynomials%2c%20Binary%20Trees%20and%20Gradient%20Descent"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f&amp;title=Polynomial%20Inspired%20Neural%20Network%20Design%20and%20Initiailzation"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f&amp;title=Polynomials%2c%20Binary%20Trees%20and%20Gradient%20Descent"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f&amp;title=Polynomial%20Inspired%20Neural%20Network%20Design%20and%20Initiailzation"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Polynomials%2c%20Binary%20Trees%20and%20Gradient%20Descent&amp;body=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f">
+         href="mailto:?subject=Polynomial%20Inspired%20Neural%20Network%20Design%20and%20Initiailzation&amp;body=https%3a%2f%2fjoedaws.github.io%2fpost%2fbinary-tree-network%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -389,9 +389,13 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h1 id="nonlinear-approximation">Nonlinear Approximation</h1>
+<h1 id="polynomial-approximation-can-inform-network-design">Polynomial approximation can inform network design</h1>
 
-<p>As described in my previous <a href="https://joedaws.github.io/post/designing-neural-networks/" title="Neural Network Design" target="_blank">post</a>
+<p>The following is a breif discussion of work found in this <a href="https://arxiv.org/abs/1905.10457" target="_blank">preprint</a>
+which has been submitted to NeurIPS 2019. In this post I&rsquo;ve left out
+many details. If you are interested in these details please see the
+preprint. As described in my previous
+<a href="https://joedaws.github.io/post/designing-neural-networks/" title="Neural Network Design" target="_blank">post</a>
 Neural networks have emerged as a very powerful tool for constructing
 nonlinear functions in high-dimensions. They are known to be very expressive
 in the sense that the class of functions they can approximate is very wide.
@@ -403,18 +407,21 @@ assocaited with solving tasks like image classification
 many be quite complicated, training can be very difficult.
 Although many aspects of neural network are new (such as fast training algorithms
 implementable on a GPU) their expressive power and ability to appoximate
-has been considered for a long time, but I personally haven&rsquo;t seen
+has been known for decades. However, there do not seem to be
 many works which make explicit connections between the powerful
 results of classical approximation theory to expressibility results for
 neural networks. Below is an outline of one way in which polynomial approximation
-may be able to help networks approximate difficult function. By constructing
-a network which can approximate a polynomial we can take advantage of
-existing polynomial approximate results. On the other hand since
-networks are so expressive, given a polynoial approximation,
-we can generate a network which is first initialized to take on the behavior of
-the polynomial, then trained to find an even better approximation.</p>
+may inform efficient approximation of complicated functions by networks.
+The primary connection between these kinds of approximation is made by
+by constructing a network which can approximate a given polynomial.
+One can then take advantage of existing polynomial approximate results
+by first finding a suitable polynomial approximation then constructing a network
+which achieves this approximation. After it has been initialzed to behave
+like a polynomial, the network can be trained. Our numerical examples show that
+networks initialized by our proposed method have
+better performance than the polynomial used to initialize them.</p>
 
-<h2 id="polynomial-approximation">Polynomial Approximation</h2>
+<h2 id="a-network-for-approximating-polynomials">A Network for Approximating Polynomials</h2>
 
 <p>Polynomials are natural objects of interest in many different areas of mathematics.
 A generic degree $n$ polynomial $P_n$ is often written
@@ -422,26 +429,61 @@ $$ P_n(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n. $$
 Written in this way the polynomial $P_n$ is completely characterized
 by its coefficients $a_i$ for $i=0,&hellip;,n$.
 Therefore, finding a suitable polynomial approximation is equivalent to
-identifying the correct coefficients.</p>
+identifying coefficients. Instead of writing the polynomial
+as a sum of the powers of the input $x$ one may also write a
+polynomial as the product of linear shifts of the input.
+According to the <strong>Fundamental Theorem of Algebra</strong>
+every degree $n$ polynomial can be written
+$$P_n(x) = a\Pi_{i=1}^n (x - r_i)$$
+for $n$ complex numbers $r_i$ and where $a$ is a scaling factor.
+We construct a network which approximates $d$-dimensional
+generalizations of polynomials like $P$ by approximating the product
+of $n$ numbers with a network. Such a network can be constructed
+by simplying chaining together several instances of a network
+which approximates the product of two numbers.
+Noticing that for two real numbers $a$ and $b$
+$$ 2ab = (a+b)^2 -a^2 - b^2$$, we can approximate a product by
+a linear combination of the outputs of three networks. One
+which approximtes $(a+b)^2$, one which approximates $a^2$ and
+one which approximates $b^2$. A network which approximtaes the mapping
+$x \mapsto x^2$ can be constructed from an $L$ layer network
+with $4$ nodes per level.</p>
 
-<p>According to the fundamental theorem of algebra
-Suppose that you know a root of the polynomial $P$ is $r$. Then
-it is possible to write
-$P(x) = (x-r)Q(x)$ in light of our observation about numbers and
-since $x-r = 0$ when $x=r$ for some other polynomials $Q$.
-Iterating this process we can write polynonials as
-a product of $n$ numbers of the form $(x-r_i)$ for $i=1,\dots,n$.
-This fact is known as the <strong>Fundamental Theorem of Algebra</strong>.
-It is known that every degree $n$ polynomial can be written
-$$ P_n(x) = \Pi_{i=1}^n (x - r_i) $$
-for $n$ complex numbers $r_i$.
-We now how two representations of $P_n(x)$i. One written
-entirely as a linear combination of the powers of $x$ and the other
-as products of affine functions $(x-r_i)$.
-Each representation is equally valid and has its own usefulness.
-There may also be other interesting representations of polynomials
-which involve not only products and linear combinations but also
-compositions of polynomials.</p>
+<p><img src="x2_net_new.png" alt="Network for x2" width="200"/></p>
+
+<p>Chaining several of these networks together we can approximate
+the product of $n$ numbers and hence a polynomial. The following is
+a rough outline the structure of network which approximates a polynomial.</p>
+
+<p><img src="polynomial_network.png" alt="Polynomial network" width="400"/></p>
+
+<h2 id="initialization-based-on-polynomials">Initialization based on polynomials</h2>
+
+<p>It is possible to initialize a network to have polynomial behavior.
+Below, we have initiailzed network to a degree 6 Legendre interpolant
+of a rational function.</p>
+
+<p><img src="rational_poly_poly_init_net.png" alt="Polynomial Initialized network" width="400"/></p>
+
+<p>This network can then be trained to achieve a good approximation of the target
+rational polynomial.</p>
+
+<p><img src="rational_poly_trained_net.png" alt="Trained Network" width="400"/></p>
+
+<p>There are some recovery artifacts around the edges of the rational function.
+We believe these are due to the fact that we did not allow
+connections to form between the interior nodes of subnetworks which
+approximate $x^2$. We can alieve these effects by using a simple
+polynomial $x^2$ to initialize a network.</p>
+
+<p><img src="cos_1d_deep_net_both_trained_net_3.png" alt="Realistic architecture network" width="400"/></p>
+
+<p>Above we compare the result of trianing the same network initialized by our method to
+the popular Xavier random initiailzation. We see that our network was better able to
+approximate the target, at least for this example.</p>
+
+<p>In the future, we plan to explore using this initialization scheme in real-world
+problems of interest such as classificaiton.</p>
 
     </div>
 
@@ -480,6 +522,8 @@ compositions of polynomials.</p>
       <ul>
         
         <li><a href="/post/designing-neural-networks/">Designing Neural Networks</a></li>
+        
+        <li><a href="/talk/at16-vanderbilt/">A Deep Neural Network Architecture Inspired by Polynomial Approximation</a></li>
         
       </ul>
     </div>

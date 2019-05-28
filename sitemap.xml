@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>https://joedaws.github.io/publication/polynomials-for-nets/</loc>
+      <lastmod>2019-05-28T17:10:52-04:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/post/binary-tree-network/</loc>
+      <lastmod>2019-05-14T11:36:57-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://joedaws.github.io/talk/at16-vanderbilt/</loc>
       <lastmod>2019-05-13T16:40:32-04:00</lastmod>
     </url>
@@ -14,14 +30,6 @@
     
       <loc>https://joedaws.github.io/talk/siam-cse-2019-rom-minisymposium/</loc>
       <lastmod>2019-02-20T08:58:37-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://joedaws.github.io/post/binary-tree-network/</loc>
-      <lastmod>2019-01-14T11:36:57-05:00</lastmod>
     </url>
     
   
@@ -92,6 +100,15 @@
     
     <url>
     
+      <loc>https://joedaws.github.io/publication_types/1/</loc>
+      <lastmod>2019-05-28T17:10:52-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://joedaws.github.io/publication_types/3/</loc>
       <lastmod>2018-11-08T10:13:35-05:00</lastmod>
       <priority>0</priority>
@@ -119,7 +136,7 @@
     <url>
     
       <loc>https://joedaws.github.io/categories/neural-networks/</loc>
-      <lastmod>2019-01-14T11:36:57-05:00</lastmod>
+      <lastmod>2019-05-14T11:36:57-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -137,7 +154,7 @@
     <url>
     
       <loc>https://joedaws.github.io/publication_types/</loc>
-      <lastmod>2018-11-08T10:13:35-05:00</lastmod>
+      <lastmod>2019-05-28T17:10:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -146,6 +163,15 @@
     <url>
     
       <loc>https://joedaws.github.io/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://joedaws.github.io/tags/approximation-theory/</loc>
+      <lastmod>2019-05-28T17:10:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -180,6 +206,15 @@
     
     <url>
     
+      <loc>https://joedaws.github.io/tags/deep-learning/</loc>
+      <lastmod>2019-05-28T17:10:52-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://joedaws.github.io/tags/image-processing/</loc>
       <lastmod>2018-11-08T10:13:35-05:00</lastmod>
       <priority>0</priority>
@@ -190,7 +225,7 @@
     <url>
     
       <loc>https://joedaws.github.io/tags/machine-learning/</loc>
-      <lastmod>2019-01-14T11:36:57-05:00</lastmod>
+      <lastmod>2019-05-14T11:36:57-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -199,7 +234,7 @@
     <url>
     
       <loc>https://joedaws.github.io/tags/network-architecture/</loc>
-      <lastmod>2019-01-14T11:36:57-05:00</lastmod>
+      <lastmod>2019-05-14T11:36:57-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -208,7 +243,7 @@
     <url>
     
       <loc>https://joedaws.github.io/tags/neural-networks/</loc>
-      <lastmod>2019-05-13T16:40:32-04:00</lastmod>
+      <lastmod>2019-05-28T17:10:52-04:00</lastmod>
       <priority>0</priority>
     </url>
     

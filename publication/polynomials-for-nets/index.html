@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Joseph Daws is a Graduate Research Assistant in Mathematics. He is an applied mathematician interested in developing theory which leads to accurate and effecient solutions to large scale problems.">
+  <meta name="description" content="In this effort we propose a novel approach for reconstructing multivariate functions from training data, by identifying both a suitable network architecture and an initialization using polynomial-based approximations. Training deep neural networks using gradient descent can be interpreted as moving the set of network parameters along the loss landscape in order to minimize the loss functional. The initialization of parameters is important for iterative training methods based on descent. Our procedure produces a network whose initial state is a polynomial representation of the training data. The major advantage of this technique is from this initialized state the network may be improved using standard training procedures. Since the network already approximates the data, training is more likely to produce a set of parameters associated with a desirable local minimum. We provide the details of the theory necessary for constructing such networks and also consider several numerical examples that reveal our approach ultimately produces networks which can be effectively trained from our initialized state to achieve an improved approximation for a large class of target functions.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://joedaws.github.io/publication/">
+  <link rel="alternate" hreflang="en-us" href="https://joedaws.github.io/publication/polynomials-for-nets/">
 
   
 
@@ -92,15 +92,15 @@
   
 
   
-  <link rel="alternate" href="https://joedaws.github.io/publication/index.xml" type="application/rss+xml" title="Joseph Daws">
-  <link rel="feed" href="https://joedaws.github.io/publication/index.xml" type="application/rss+xml" title="Joseph Daws">
+  <link rel="alternate" href="https://joedaws.github.io/index.xml" type="application/rss+xml" title="Joseph Daws">
+  <link rel="feed" href="https://joedaws.github.io/index.xml" type="application/rss+xml" title="Joseph Daws">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://joedaws.github.io/publication/">
+  <link rel="canonical" href="https://joedaws.github.io/publication/polynomials-for-nets/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -108,23 +108,25 @@
   <meta property="twitter:creator" content="@JoeDawsJr">
   
   <meta property="og:site_name" content="Joseph Daws">
-  <meta property="og:url" content="https://joedaws.github.io/publication/">
-  <meta property="og:title" content="Publications | Joseph Daws">
-  <meta property="og:description" content="Joseph Daws is a Graduate Research Assistant in Mathematics. He is an applied mathematician interested in developing theory which leads to accurate and effecient solutions to large scale problems.">
+  <meta property="og:url" content="https://joedaws.github.io/publication/polynomials-for-nets/">
+  <meta property="og:title" content="A Polynomial-Based Approach for Architectural Design and Learning with Deep Neural Networks | Joseph Daws">
+  <meta property="og:description" content="In this effort we propose a novel approach for reconstructing multivariate functions from training data, by identifying both a suitable network architecture and an initialization using polynomial-based approximations. Training deep neural networks using gradient descent can be interpreted as moving the set of network parameters along the loss landscape in order to minimize the loss functional. The initialization of parameters is important for iterative training methods based on descent. Our procedure produces a network whose initial state is a polynomial representation of the training data. The major advantage of this technique is from this initialized state the network may be improved using standard training procedures. Since the network already approximates the data, training is more likely to produce a set of parameters associated with a desirable local minimum. We provide the details of the theory necessary for constructing such networks and also consider several numerical examples that reveal our approach ultimately produces networks which can be effectively trained from our initialized state to achieve an improved approximation for a large class of target functions.">
   
   
     
   <meta property="og:image" content="https://joedaws.github.io/img/joe_pic_grad.JPG">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-01-01T00:00:00-05:00">
+  <meta property="article:published_time" content="2019-05-28T17:10:52-04:00">
+  
+  <meta property="article:modified_time" content="2019-05-28T17:10:52-04:00">
   
 
   
 
   
 
-  <title>Publications | Joseph Daws</title>
+  <title>A Polynomial-Based Approach for Architectural Design and Learning with Deep Neural Networks | Joseph Daws</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -255,8 +257,9 @@
   </div>
 </nav>
 
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
-
+  
 
 
 
@@ -273,94 +276,169 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">A Polynomial-Based Approach for Architectural Design and Learning with Deep Neural Networks</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Publications</h1>
+
+<div class="article-metadata">
 
   
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Joseph Daws Jr.</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Clayton Webster</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-05-28 17:10:52 -0400 EDT" itemprop="datePublished">
+    <time datetime="2019-05-28 17:10:52 -0400 EDT" itemprop="dateModified">
+      May 28, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Joseph D. Daws Jr.">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=A%20Polynomial-Based%20Approach%20for%20Architectural%20Design%20and%20Learning%20with%20Deep%20Neural%20Networks&amp;url=https%3a%2f%2fjoedaws.github.io%2fpublication%2fpolynomials-for-nets%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjoedaws.github.io%2fpublication%2fpolynomials-for-nets%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjoedaws.github.io%2fpublication%2fpolynomials-for-nets%2f&amp;title=A%20Polynomial-Based%20Approach%20for%20Architectural%20Design%20and%20Learning%20with%20Deep%20Neural%20Networks"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjoedaws.github.io%2fpublication%2fpolynomials-for-nets%2f&amp;title=A%20Polynomial-Based%20Approach%20for%20Architectural%20Design%20and%20Learning%20with%20Deep%20Neural%20Networks"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=A%20Polynomial-Based%20Approach%20for%20Architectural%20Design%20and%20Learning%20with%20Deep%20Neural%20Networks&amp;body=https%3a%2f%2fjoedaws.github.io%2fpublication%2fpolynomials-for-nets%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  <div class="row">
-    <div class="col-lg-12">
+  <div class="article-container">
 
-      
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">In this effort we propose a novel approach for reconstructing multivariate functions from training data, by identifying both a suitable network architecture and an initialization using polynomial-based approximations. Training deep neural networks using gradient descent can be interpreted as moving the set of network parameters along the loss landscape in order to minimize the loss functional. The initialization of parameters is important for iterative training methods based on descent. Our procedure produces a network whose initial state is a polynomial representation of the training data. The major advantage of this technique is from this initialized state the network may be improved using standard training procedures. Since the network already approximates the data, training is more likely to produce a set of parameters associated with a desirable local minimum. We provide the details of the theory necessary for constructing such networks and also consider several numerical examples that reveal our approach ultimately produces networks which can be effectively trained from our initialized state to achieve an improved approximation for a large class of target functions.</p>
+    
 
-      
-      
-        
-        
-      
-        
-        
-      
-
-      <div class="form-row mb-3">
-        <div class="col-auto">
-          Filter by type:
-        </div>
-        <div class="col-auto">
-          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*">All</option>
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
             
-            <option value=".pubtype-1">
+            <a href="/publication/#1">
               Conference paper
-            </option>
+            </a>
             
-            <option value=".pubtype-3">
-              Manuscript
-            </option>
-            
-          </select>
-        </div>
-        <div class="col-auto">
-          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*">All</option>
-            
-            
-            
-            <option value=".year-2019">
-              2019
-            </option>
-            
-            <option value=".year-2018">
-              2018
-            </option>
-            
-            
-          </select>
+          </div>
         </div>
       </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
 
-      <div id="container-publications">
-        
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">A Polynomial-Based Approach for Architectural Design and Learning with Deep Neural Networks</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
 
-        
-          
-        
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9" itemprop="datePublished">
+            May, 2019
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-sm-none space-below"></div>
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Joseph Daws Jr., Clayton Webster</span>.
-  <a href="/publication/polynomials-for-nets/" itemprop="name">A Polynomial-Based Approach for Architectural Design and Learning with Deep Neural Networks</a>.
-  A Polynomial-Based Approach for Architectural Design and Learning with Deep Neural Networks,
-  2019.
-  <p>
+    <div class="row" style="padding-top: 10px">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-12 col-md-9">
+
+            
 
 
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1905.10457" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1905.10457" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -387,72 +465,51 @@
 
 
 
-</p>
-</div>
 
-          
+
+          </div>
         </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2018">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Joseph Daws, Armenak Petrosyan, Hoang Tran, Clayton Webster</span>.
-  <a href="/publication/weighted-l1-minimization-and-closed-trees/" itemprop="name">Weighted L1 Minimization and Closed Trees</a>.
-  weighted l1-minimization and closed trees,
-  2018.
-  <p>
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/image-inpainting/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-</p>
-</div>
-
-          
-        </div>
-
-        
       </div>
-
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-sm-none space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/deep-learning/">deep-learning</a>
+  
+  <a class="badge badge-light" href="/tags/neural-networks/">neural-networks</a>
+  
+  <a class="badge badge-light" href="/tags/approximation-theory/">approximation-theory</a>
+  
+</div>
+
+
+
+    
+
+
+
+  
+
+
+
+
+
+
+
   </div>
 </div>
+
+
+
 <div class="container">
   <footer class="site-footer">
   

@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 28 May 2019 17:10:52 -0400</lastBuildDate>
     
 	<atom:link href="https://joedaws.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,33 +22,6 @@
     </item>
     
     <item>
-      <title>clustering</title>
-      <link>https://joedaws.github.io/tags/clustering/</link>
-      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
-      
-      <guid>https://joedaws.github.io/tags/clustering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>convex-optimization</title>
-      <link>https://joedaws.github.io/tags/convex-optimization/</link>
-      <pubDate>Mon, 05 Nov 2018 09:48:32 -0500</pubDate>
-      
-      <guid>https://joedaws.github.io/tags/convex-optimization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data-analysis</title>
-      <link>https://joedaws.github.io/tags/data-analysis/</link>
-      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
-      
-      <guid>https://joedaws.github.io/tags/data-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>deep-learning</title>
       <link>https://joedaws.github.io/tags/deep-learning/</link>
       <pubDate>Tue, 28 May 2019 17:10:52 -0400</pubDate>
@@ -57,11 +31,11 @@
     </item>
     
     <item>
-      <title>image-processing</title>
-      <link>https://joedaws.github.io/tags/image-processing/</link>
-      <pubDate>Thu, 08 Nov 2018 10:13:35 -0500</pubDate>
+      <title>neural-networks</title>
+      <link>https://joedaws.github.io/tags/neural-networks/</link>
+      <pubDate>Tue, 28 May 2019 17:10:52 -0400</pubDate>
       
-      <guid>https://joedaws.github.io/tags/image-processing/</guid>
+      <guid>https://joedaws.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     
@@ -84,11 +58,29 @@
     </item>
     
     <item>
-      <title>neural-networks</title>
-      <link>https://joedaws.github.io/tags/neural-networks/</link>
-      <pubDate>Tue, 28 May 2019 17:10:52 -0400</pubDate>
+      <title>clustering</title>
+      <link>https://joedaws.github.io/tags/clustering/</link>
+      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
       
-      <guid>https://joedaws.github.io/tags/neural-networks/</guid>
+      <guid>https://joedaws.github.io/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data-analysis</title>
+      <link>https://joedaws.github.io/tags/data-analysis/</link>
+      <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image-processing</title>
+      <link>https://joedaws.github.io/tags/image-processing/</link>
+      <pubDate>Thu, 08 Nov 2018 10:13:35 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/image-processing/</guid>
       <description></description>
     </item>
     
@@ -98,6 +90,15 @@
       <pubDate>Thu, 08 Nov 2018 10:13:35 -0500</pubDate>
       
       <guid>https://joedaws.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>convex-optimization</title>
+      <link>https://joedaws.github.io/tags/convex-optimization/</link>
+      <pubDate>Mon, 05 Nov 2018 09:48:32 -0500</pubDate>
+      
+      <guid>https://joedaws.github.io/tags/convex-optimization/</guid>
       <description></description>
     </item>
     

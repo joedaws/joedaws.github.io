@@ -18,7 +18,7 @@
       <pubDate>Thu, 08 Nov 2018 11:09:54 -0500</pubDate>
       
       <guid>https://joedaws.github.io/project/spectral-clustering-sns-target-data/</guid>
-      <description></description>
+      <description>The spallation neutron source (SNS) is a consumable component which wears out due to radiation damage and cavitation erosion. We propose a spectral clustering based method to detect damage in the target.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Mon, 05 Nov 2018 09:48:32 -0500</pubDate>
       
       <guid>https://joedaws.github.io/project/image-inpainting/</guid>
-      <description>Weighted $\ell_1$-minimization In an upcoming work a convex optimization approach, based on weighted $\ell_1$-regularization, is proposed for reconstructing sparse wavelet representations. We show our proposed optimization problem is effective for solving the signal/image inpainting and denoising problems. We take the funcational representation of an image or signal to be $$ f(y) = \sum_{j \in \mathcal{J}} c_j \Psi_j(y) . $$ The wavelet coefficients $c = (c_j)_{j \in \mathcal{J}}$ associated to the functional representation of the object of interest are obtained as minizers of</description>
+      <description>Using weighted convex minimization to solve the image inpainting and de-noising problems.</description>
     </item>
     
   </channel>

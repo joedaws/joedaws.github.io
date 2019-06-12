@@ -6,7 +6,7 @@
     <description>Recent content in Homes on Joseph Daws</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; 2019</copyright>
     <lastBuildDate>Fri, 02 Nov 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joedaws.github.io/home/index.xml" rel="self" type="application/rss+xml" />
@@ -36,7 +36,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://joedaws.github.io/home/about/</guid>
-      <description>Biography Joseph Daws is a graduate research assistant in the department of mathematics at the University of Tennessee Knoxville working with Professor Clayton Webster. Joseph is interested in problems at the intersection of approximation theory, inverse problems, image processing, optimization, and machine learning. His most recent work is concerned with studying how regularization affects the performance of the optimization problems at the heart of machine learning and image processing.</description>
+      <description>Biography I am a graduate research assistant in the department of mathematics at the University of Tennessee Knoxville working with Professor Clayton Webster. My research interests are motivated by finding connections between challenging real-world problems and rigorous theory. I believe finding solutions rooted in theory leads to precise answers to difficult questions and understanding techniques used in practice leads to theoretical insight.</description>
     </item>
     
     <item>

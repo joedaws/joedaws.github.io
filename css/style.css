@@ -220,7 +220,7 @@ p {
   position: absolute;
   left: 50%;
   bottom: 20px;
-  z-index: -2;
+  z-index: 7;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;

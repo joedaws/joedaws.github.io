@@ -104,23 +104,31 @@ p {
   -ms-transition: 0.2s;
   transition: 0.2s;
 }
+
 #fh5co-bio #fh5co-bio-inner {
   padding: 40px;
   background: #521c66;
 }
-@media screen and (max-width: 992px) {
-  #fh5co-bio #fh5co-bio-inner {
-    padding: 20px;
-  }
-}
+
+// This controls where I have my text
 @media screen and (max-width: 992px) {
   #fh5co-bio {
-    font-size: 20px;
-    line-height: 36px;
-    width: 100%;
-    position: relative;
+    //font-size: 12px;
+    //line-height: 36px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  #fh5co-bio #fh5co-bio-inner {
+
+    overflow-wrap: break-word;
+    //display: none;
+    //font-size: 6px;
+    //margin-left: -100px;
+    //width: 40%;
+  }
+}
+
 #fh5co-bio .fh5co-copyright {
   font-size: 14px;
   line-height: 20px;
@@ -145,6 +153,15 @@ p {
   -ms-transition: 0.2s;
   transition: 0.2s;
 }
+
+/* hides the background image */
+@media screen and (max-width: 992px) {
+  #fh5co-portrait {
+    display: none;
+  }
+}
+
+/* this wasn't working but this controls the back drop.
 @media screen and (max-width: 992px) {
   #fh5co-portrait {
     width: 100%;
@@ -156,7 +173,8 @@ p {
     float: left;
     width: 100%;
   }
-}
+}*/
+
 #fh5co-portrait #fh5co-intro {
   position: absolute;
   text-align: center;
@@ -168,12 +186,15 @@ p {
   z-index: 1;
   color: #fff;
 }
+
+// not sure which one this is.
 @media screen and (max-width: 768px) {
   #fh5co-portrait #fh5co-intro {
     left: 100px;
     bottom: 50px;
   }
 }
+
 #fh5co-portrait #fh5co-intro a {
   color: #fff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -192,21 +213,25 @@ p {
 #fh5co-portrait #fh5co-intro h1 span {
   display: block;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-portrait #fh5co-intro h1 {
-    font-size: 38px;
+    font-size: 12px;
     line-height: 50px;
   }
 }
+
 @media screen and (max-width: 480px) {
   #fh5co-portrait #fh5co-intro h1 {
     font-size: 30px;
     line-height: 42px;
   }
 }
+
 #fh5co-portrait #fh5co-intro p {
   margin: 0 0 1.5em 0;
 }
+
 #fh5co-portrait .overlay {
   background: #ab20fd;
   opacity: .4;
@@ -216,6 +241,7 @@ p {
   bottom: 0;
   right: 0;
 }
+
 #fh5co-portrait .fh5co-social {
   position: absolute;
   left: 50%;

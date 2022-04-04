@@ -1,0 +1,167 @@
+:root {
+  --main-bg-color: #521c66;
+  --main-color: #fff;
+  --muted-color: #ff00f6;
+  --link-color: #ff99fb;
+  --highlighted-color: #ab20fd;
+  --alternative-highlight-color: #fff600;
+  --highlight-pen-color: #004fff;
+}
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --main-bg-color: #521c66;
+    --main-color: #fff;
+    --muted-color: #ff00f6;
+    --link-color: #ff99fb;
+    --highlighted-color: #ab20fd;
+    --alternative-highlight-color: #fff600;
+    --highlight-pen-color: #004fff;
+  }
+}
+
+body {
+  max-width: 650px;
+  margin: 1em;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--main-color);
+  background: var(--main-bg-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--muted-color);
+}
+
+a:hover {
+  border: none;
+}
+
+a.footnote {
+  vertical-align: super;
+  font-size: smaller;
+  border: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2
+}
+
+main {
+  clear: both;
+  display: block;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 18px;
+}
+
+
+nav ul li+li:before {
+  padding: 0.5em;
+  color: var(--muted-color);
+  content: "\003e";
+}
+
+blockquote {
+  font-family: serif;
+  margin: 0;
+  padding: 0.5em 2em;
+  line-height: 1.6;
+  background-color: var(--highlight-pen-color);
+  border-radius: 12px;
+}
+
+
+main ul {
+  list-style-type: "•";
+  list-style-position: outside;
+}
+
+main ul li,
+main ol li {
+  margin: 0.5em 0;
+  padding: 0 0 0 1em;
+  margin-left: -20px;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid var(--muted-color);
+  margin: 2em 0;
+}
+
+code {
+  color: var(--highlighted-color);
+}
+
+code,
+pre {
+  font-size: 16px;
+}
+
+pre {
+  padding: 1em;
+  overflow: auto;
+}
+
+iframe {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  padding: 0;
+  margin: 1em 0;
+}
+
+figcaption {
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+figcaption table, figcaption table code {
+  font-size: 14px;
+}
+
+footer {
+  font-size: 14px;
+  margin: 2em 0;
+  color: var(--muted-color);
+}
+
+table {
+  overflow: auto;
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: normal;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table td, th {
+  padding: 1em;
+  text-align: left;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: var(--alternative-highlight-color);
+}
+

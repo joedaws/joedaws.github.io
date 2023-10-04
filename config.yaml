@@ -261,7 +261,6 @@ params:
     items:
       - title: Automated routing of faxed documents
         content: Used Computer vision and deep learning to extract important information from incoming faxes. This service also automatically routes faxes to their correct final destination in an electronic health record (EHR) when the type is detected.
-        image: /images/projects/profile.png
         featured:
           name: Tesseract
           link: https://github.com/tesseract-ocr/tesseract

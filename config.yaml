@@ -142,7 +142,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/joe_pic.jpg"
+    image: "/images/joe_woods.jpg"
     content: |-
       I believe machine learning can be used to improve the state of the world despite its potential dangers when used maliciously or carelessly. This belief guides my approach to engineering. Good software goes a step beyopnd solving a problem, it should enable humans to achieve more than they could without it.
 
@@ -257,9 +257,10 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
+    title: "Recent Work"
     items:
       - title: Automated routing of faxed documents
+        image: /images/fax.png
         content: Used Computer vision and deep learning to extract important information from incoming faxes. This service also automatically routes faxes to their correct final destination in an electronic health record (EHR) when the type is detected.
         featured:
           name: Tesseract

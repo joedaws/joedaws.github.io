@@ -118,7 +118,7 @@ params:
     intro: "Hi, my name is"
     title: "Joe."
     subtitle: "I build software to help humans thrive."
-    content: "I believe that software can be used to improve the state of the world despite it's challenges and potential dangers. I have a passion for developing tools that make the world a better place."
+    content: "I believe that software can be used to improve the state of the world despite it's challenges and potential dangers. I have a passion for developing applications that make the world a better place."
     image: /images/joe_pic.jpg
     bottomImage:
       enable: true
@@ -144,7 +144,7 @@ params:
     title: "About Me"
     image: "/images/joe_woods.jpg"
     content: |-
-      I believe machine learning can be used to improve the state of the world despite its potential dangers when used maliciously or carelessly. This belief guides my approach to engineering. Good software goes a step beyopnd solving a problem, it should enable humans to achieve more than they could without it.
+      I believe machine learning can be used to improve the state of the world despite its potential dangers. This belief guides my approach to building. Good software goes a step beyond solving a problem, it should enable humans to live a better life.
 
       I am currently a Senior Machine Learning Software Engineer at One Medical where I am working on automating labourous and monotonous tasks to give time back to health care providers so that they may better connect with their patients.
     skills:

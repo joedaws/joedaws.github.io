@@ -70,7 +70,7 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
+     disableThemeToggle: true
     # defaultTheme: "light" # dark
 
   font:
@@ -80,13 +80,13 @@ params:
     textAlign: left # default: left
 
   # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  color:
+    textColor: \#333
+    secondaryTextColor: \#228B22
+    backgroundColor: \#d9bda5
+    secondaryBackgroundColor:
+    primaryColor: \#cc7722 # used for large name and some outlines
+    secondaryColor: \#f6eee3
 
   #   darkmode:
   #     textColor:

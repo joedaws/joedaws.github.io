@@ -82,7 +82,7 @@ params:
   # color preference
   color:
     textColor: \#333
-    secondaryTextColor: \#228B22
+    secondaryTextColor: \#306230 # used for section titles
     backgroundColor: \#d9bda5
     secondaryBackgroundColor:
     primaryColor: \#cc7722 # used for large name and some outlines
@@ -260,7 +260,7 @@ params:
     title: "Recent Work"
     items:
       - title: Automated routing of faxed documents
-        image: /images/fax.png
+        image: /images/fax_word.png
         content: Used Computer vision and deep learning to extract important information from incoming faxes. This service also automatically routes faxes to their correct final destination in an electronic health record (EHR) when the type is detected.
         featured:
           name: Tesseract
@@ -272,15 +272,8 @@ params:
           - "AWS Lambda"
           - "AWS SNS/SQS"
 
-      - title: Cartomancy
-        content: A minimal python-based game engine for building card games you can play on the command line. Future state will include trainable agents to play games implemented in the engine.
-        links:
-          - icon: fab fa-github
-            url: https://github.com/joedaws/cartomancy
-        badges:
-          - "Python"
-
       - title: Limited Data Estimator
+        image: /images/lde.png
         content: Comparison of policies for contextual bandit problems using a set of limited historical interactions.
         badges:
           - "Python"
@@ -290,6 +283,7 @@ params:
             url: https://github.com/joedaws/lde2021
 
       - title: Adaptive Stochastic gradient-free (ASGF) blackbox optimization
+        image: /images/asgf.png
         content: A black-box optimization method for extremely high dimensional non-convex objective functions.
         badges:
           - "Python"

@@ -1,0 +1,74 @@
+#+SETUPFILE: ~/Sync/joedaws-github-io/gray.theme
+#+Title: Joseph Daws, Jr.
+#+AUTHOR: Joseph Daws, Jr.
+#+OPTIONS: num:nil ^:nil <:t
+
+#+ATTR_HTML: :width 20p
+[[./img/crow.svg]] Hello, my name is Joseph (or Joe if you prefer monosyllabic names).
+
+*I build software to help humans thrive.* I believe that software
+can be used to improve the state of the world despite it's challenges
+and potential dangers. One lens through which I view my work is
+as a string of problem definitions and solving those problems.
+Iterating on my understanding of the problem domain and the world is key.
+
+#+CAPTION: Taken around Jan. 2024
+#+ATTR_HTML: :width 300p :align center :alt "Joseph Daws, Jr." :align center
+[[./img/joe_pic.jpg]]
+
+* About Me
+
+I believe machine learning can be used to improve the state of the world. However,
+deploying these technologies requires a nuanced understanding of the business and
+problem spaces. My belief in the possibility of positive outcomes guides my approach
+to building. *Good software goes a step beyond solving a problem*, it should enable
+humans to live a better life.
+
+I am currently a Senior Machine Learning Software Engineer at [[https://onemedical.com/][One Medical]] where I am
+working on automating laborious and monotonous tasks to give time back to health
+care providers so that they may better connect with their patients.
+
+* Recent Work
+** Document Summarization
+*Technologies Used*
+=Python=, =Anthropic Claude=, =AWS Lambda=, =AWS DynamoDB=, =AWS IAM=, =AWS SNS/SQS=, =Terraform=
+
+*Problem Description*
+To achieve the highest quality in patient care One Medical's providers need to be able to
+spend more time connecting and understanding their patients.
+
+*Solution*
+One area they might save time is gleaning the most relevant and important information from the documents associated with their patients. I developed a system which generates summaries of all patient's documents
+which is consumed by an EHR and displayed along side the rendered document in an EHR UI.
+
+** Automated Fax Routing
+*Technologies Used*
+=Python=, =Tensorflow=, =FastAPI=, =AWS Lambda=, =AWS IAM=, =AWS SNS/SQS=, =Terraform=
+
+*Problem Description*
+A team of Fax routers receives more faxes than they are able to process given their
+team's service level agreement.
+
+*Solution*
+To lessen the burned of the fax routing teams' workload, I extended a routing system to automatically
+processing incoming faxes. The system predicted key identifiers for each document. These predictions
+were forwarded to an EHR which took an action based on the predicted values.
+
+* Tools I use to build
+
+*For Machine Learning Microservices* I've used and enjoy working with =Python=, =AWS SageMaker=,
+=Docker=, =AWS Lambda=, =FastAPI=, =AWS ECS= to build microservices that serve machine learning
+model predictions. I think this stack offers a path to building maintainable and
+efficient machine learning microservices in a variety (but not all) contexts.
+
+*For Web Applications* Some technologies I am excited about are =Haskell=, =IHP Platform=, =NixOS=. I expect to be able to use these build a robust, easily maintainable, and easily modifiable web applications. I am working
+on a personal blog/second brain using IHP now. Please check back for updates on this project.
+
+*I like learning about new tools* New problem domains (well those are new to me) likely have
+established or new tech stacks that are better candidates to solving the problem than what I
+have used previously. It's a pleasure to have the time to find a good solution and balance the
+trade-offs when approaching a new problem. I don't believe in the existence of a perfect
+tech stack.
+
+* How is this page made?
+*Coming soon* tl;dr Emacs's org-mode!

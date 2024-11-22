@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-21 Thu 23:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Joseph Daws, Jr.</title>
+<meta name="author" content="Joseph Daws, Jr." />
+<meta name="generator" content="Org Mode" />
+<link rel="icon" type="image/svg+xml" href="./img/crow.svg">
+<style type="text/css">
+body {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 16px;
+line-height: 1.4;
+color: #33333f;
+}
+
+code {
+font-family: "Inconsolata", "monospace";
+font-size: 16px;
+}
+
+p>code, li>code {
+background-color: #eee;
+padding: 0.25em;
+}
+
+h1, h2, h3 {
+font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+padding-bottom: 0.5em;
+font-size: 1.75em;
+}
+
+h3 {
+margin-top: 2em;
+font-size: 1.5em;
+}
+
+h4 {
+font-size: 1.25em;
+}
+
+h5 {
+font-size: 1em;
+}
+
+h2 code, h3 code, h4 code, h5 code, td code {
+font-family: inherit !important;
+font-size: inherit !important;
+}
+
+td code {
+font-weight: bold;
+}
+
+a:link, a:hover, a:visited {
+text-decoration: none;
+color: black;
+}
+
+a:link {
+background: #eaebe6;
+}
+
+a:visited {
+color: #666;
+}
+
+a:link:hover,
+a:visited:hover {
+background: #f2f794;
+}
+
+a[href^="http"]:after {
+content: "\21B3";
+background: white;
+padding-left: 0.2em;
+}
+
+#meta {
+margin-top: 2em;
+}
+
+#table-of-contents a:link,
+#table-of-contents a:visited {
+color: black;
+background: transparent;
+}
+
+#table-of-contents {
+line-height: 1.2;
+}
+#table-of-contents h2 {
+border-bottom: 0;
+font-size: 1.75em;
+}
+
+#table-of-contents ul {
+list-style: none;
+padding-left: 0.5em;
+font-weight: normal;
+}
+
+#table-of-contents div>ul>li {
+margin-top: 1em;
+font-weight: bold;
+font-size: 2.0em;
+}
+
+#table-of-contents .tag {
+display: none;
+}
+
+#table-of-contents .todo,
+#table-of-contents .done {
+font-size: 120%;
+}
+
+#table-of-contents ol>li {
+margin-top: 1em;
+}
+
+table {
+width: 100%;
+}
+
+table, th, td {
+border: 1px solid #666;
+}
+
+th, td {
+padding: 0.5em;
+text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #eee;
+}
+
+img {
+max-width: 90%;
+}
+
+div.notice {
+position: relative;
+margin: 0 1.2em;
+padding: 0.25em 1em;
+border-left: 4px solid;
+}
+
+table + div.notice {
+margin-top: 2em;
+}
+
+div.notice a {
+background: transparent !important;
+border-bottom: 1px dotted;
+}
+
+div.notice a[href^="http"]:after {
+background: transparent !important;
+}
+
+div.notice:before {
+position: absolute;
+top: 0;
+right: 0;
+padding: 0.25em 0.5em 0;
+font-size: 60%;
+border-bottom-left-radius: 0.5em;
+}
+
+.notice-warning {
+background: #fcc;
+color: #600;
+}
+
+.notice-example {
+background: #def;
+color: #069;
+}
+
+.notice-info {
+background: #efe;
+color: #060;
+}
+
+.notice-warning a {
+color: #600;
+}
+
+.notice-example a {
+color: #069;
+}
+
+.notice-info a {
+color: #060;
+}
+
+div.notice-warning:before {
+content: "WARNING";
+background: #c99;
+color: #fcc;
+}
+
+div.notice-example:before {
+content: "EXAMPLE";
+background: #abc;
+color: #def;
+}
+
+div.notice-info:before {
+content: "INFO";
+background: #9c9;
+color: #efe;
+}
+
+/* things inside the #+BEGIN_NOTE...#+END_NOTE block */
+div.NOTE a {
+background: transparent !important;
+border-bottom: 1px dotted;
+}
+
+div.NOTE {
+position: relative;
+margin: 0 1.2em;
+padding: 0.25em 1em;
+border-left: 4px solid;
+margin-top: 2em;
+background: #efe;
+color: #060;
+}
+
+div.NOTE:before {
+position: absolute;
+top: 0;
+right: 0;
+padding: 0.25em 0.5em 0;
+font-size: 60%;
+border-bottom-left-radius: 0.5em;
+content: "NOTE";
+background: #9c9;
+color: #efe;
+}
+
+blockquote {
+padding: 0px 10px 0px 10px;
+border: 1px solid #ddd;
+background: #eee;
+box-shadow: 5px 5px 5px #eee;
+border-radius: 2px;
+line-height: 1.2em;
+}
+
+pre {
+font-family: "Inconsolata", "monospace";
+font-size: 100%;
+border: 0;
+box-shadow: none;
+overflow: auto;
+}
+
+pre.example:before {
+content: "EXAMPLE";
+display: block;
+border-bottom: 1px dotted;
+margin-bottom: 1em;
+}
+
+pre.example {
+background: #fec;
+color: #666;
+font-size: 0.85em;
+}
+
+pre {
+background-color: #f8f8f8;
+background-size: 8px 8px;
+background-image: linear-gradient(135deg, transparent 25%, rgba(0, 0, 0, 0.02) 25%, rgba(0, 0, 0, 0.02) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0.02));
+}
+
+pre.src {
+padding: 0.5em;
+}
+
+pre.src:before {
+display: block;
+position: absolute;
+background-color: #ccccd0;
+top: 0;
+right: 0;
+padding: 0.25em 0.5em;
+border-bottom-left-radius: 8px;
+border: 0;
+color: white;
+font-size: 80%;
+}
+
+pre.src-plantuml:before {
+content: "UML";
+}
+
+pre.src-javascript:before {
+content: "JS";
+}
+
+pre.src-clojure:before {
+content: "CLJ";
+}
+
+pre.src-c:before {
+content: "C";
+}
+
+pre.src-sh:before {
+content: "Shell";
+}
+
+pre.src-es:before {
+content: "ES";
+}
+
+span.org-string {
+color: #f94;
+}
+
+span.org-keyword {
+color: #c07;
+}
+
+span.org-variable-name {
+color: #f04;
+}
+
+span.org-clojure-keyword {
+color: #09f;
+}
+
+span.org-comment, span.org-comment-delimiter {
+color: #999;
+}
+
+span.org-rainbow-delimiters-depth-1, span.org-rainbow-delimiters-depth-5 {
+color: #666;
+}
+
+span.org-rainbow-delimiters-depth-2, span.org-rainbow-delimiters-depth-6 {
+color: #888;
+}
+
+span.org-rainbow-delimiters-depth-3, span.org-rainbow-delimiters-depth-7 {
+color: #aaa;
+}
+
+span.org-rainbow-delimiters-depth-4, span.org-rainbow-delimiters-depth-8 {
+color: #ccc;
+}
+
+div.figure {
+font-size: 0.85em;
+}
+
+.tag {
+font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+font-size: 11px;
+font-weight: normal;
+float: right;
+margin-top: 1em;
+background: transparent;
+}
+
+.tag span {
+background: #ccc;
+padding: 0 0.5em;
+border-radius: 0.2em;
+color: white;
+}
+
+.todo, .done {
+font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+font-weight: normal;
+padding: 0 0.25em;
+border-radius: 0.2em;
+}
+
+.todo {
+background: #f04;
+color: white;
+}
+
+.done {
+background: #5f7;
+color: white;
+}
+
+@media screen {
+h1.title {
+text-align: left;
+margin: 0.5em 0 1em 0;
+}
+
+h2 {
+margin-top: 3em;
+}
+
+#table-of-contents {
+position: fixed;
+top: 0;
+left: 0;
+padding: 2em 0 2em 2em;
+width: 290px;
+height: 100vh;
+font-size: 11px;
+background: #eee;
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+#table-of-contents h2 {
+margin-top: 0;
+}
+
+#table-of-contents code {
+font-size: 12px;
+}
+
+div#content {
+margin-left: 320px;
+max-width: 1100px;
+}
+div#postamble {
+margin-left: 320px;
+max-width: 1100px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+html, body {
+font-size: 14px;
+}
+
+#table-of-contents {
+display: none;
+}
+
+h1.title {
+margin-left: 0%;
+}
+
+div#content {
+margin-left: 5%;
+max-width: 90%;
+}
+div#postamble {
+margin-left: 5%;
+max-width: 90%;
+}
+}
+
+@media print {
+
+body {
+color: black;
+}
+
+@page {
+margin: 25mm;
+}
+
+h2, h3 {
+page-break-before: always;
+margin-top: 0;
+}
+
+table {
+page-break-inside: avoid;
+}
+
+a:visited {
+color: black;
+background: #ff8;
+}
+
+a[href^="http"]:visited {
+background: #bff;
+}
+
+div.notice:before {
+display: none;
+}
+}
+
+footer {
+text-align: center; /* Center-align the footer */
+margin-top: 30px; /* Add space above the footer */
+padding: 20px; /* Add padding around the footer content */
+font-size: 0.9em; /* Slightly smaller font size */
+color: #666666; /* Subtle gray color for text */
+background-color: #f9f9f9; /* Light gray background */
+border-top: 1px solid #dddddd; /* Add a subtle border on top */
+}
+
+footer a {
+color: #666666; /* Match the link color to the footer text */
+text-decoration: none; /* Remove underline */
+border-bottom: 1px dotted #666666; /* Add a dotted underline effect */
+}
+
+footer a:hover {
+color: #333333; /* Darker gray on hover */
+border-bottom: 1px solid #333333; /* Solid underline on hover */
+}
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Joseph Daws, Jr.</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7a95ac1">About Me</a></li>
+<li><a href="#org06118e6">Recent Work</a>
+<ul>
+<li><a href="#org4b2e724">Document Summarization</a></li>
+<li><a href="#org4c82783">Automated Fax Routing</a></li>
+</ul>
+</li>
+<li><a href="#orgac06e39">Tools I use to build</a></li>
+<li><a href="#org3e08554">How is this page made?</a></li>
+</ul>
+</div>
+</div>
+<p width="20p">
+<img src="./img/crow.svg" alt="crow.svg" class="org-svg" width="20p" /> Hello, my name is Joseph (or Joe if you prefer monosyllabic names).
+</p>
+
+<p>
+<b>I build software to help humans thrive.</b> I believe that software
+can be used to improve the state of the world despite it&rsquo;s challenges
+and potential dangers. One lens through which I view my work is
+as a string of problem definitions and solving those problems.
+Iterating on my understanding of the problem domain and the world is key.
+</p>
+
+
+<div id="org2f9e6d7" class="figure">
+<p><img src="./img/joe_pic.jpg" alt="&quot;Joseph Daws, Jr.&quot;" width="300p" align="center" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Taken around Jan. 2024</p>
+</div>
+<div id="outline-container-org7a95ac1" class="outline-2">
+<h2 id="org7a95ac1">About Me</h2>
+<div class="outline-text-2" id="text-org7a95ac1">
+<p>
+I believe machine learning can be used to improve the state of the world. However,
+deploying these technologies requires a nuanced understanding of the business and
+problem spaces. My belief in the possibility of positive outcomes guides my approach
+to building. <b>Good software goes a step beyond solving a problem</b>, it should enable
+humans to live a better life.
+</p>
+
+<p>
+I am currently a Senior Machine Learning Software Engineer at <a href="https://onemedical.com/">One Medical</a> where I am
+working on automating laborious and monotonous tasks to give time back to health
+care providers so that they may better connect with their patients.
+</p>
+</div>
+</div>
+<div id="outline-container-org06118e6" class="outline-2">
+<h2 id="org06118e6">Recent Work</h2>
+<div class="outline-text-2" id="text-org06118e6">
+</div>
+<div id="outline-container-org4b2e724" class="outline-3">
+<h3 id="org4b2e724">Document Summarization</h3>
+<div class="outline-text-3" id="text-org4b2e724">
+<p>
+<b>Technologies Used</b>
+<code>Python</code>, <code>Anthropic Claude</code>, <code>AWS Lambda</code>, <code>AWS DynamoDB</code>, <code>AWS IAM</code>, <code>AWS SNS/SQS</code>, <code>Terraform</code>
+</p>
+
+<p>
+<b>Problem Description</b>
+To achieve the highest quality in patient care One Medical&rsquo;s providers need to be able to
+spend more time connecting and understanding their patients.
+</p>
+
+<p>
+<b>Solution</b>
+One area they might save time is gleaning the most relevant and important information from the documents associated with their patients. I developed a system which generates summaries of all patient&rsquo;s documents
+which is consumed by an EHR and displayed along side the rendered document in an EHR UI.
+</p>
+</div>
+</div>
+<div id="outline-container-org4c82783" class="outline-3">
+<h3 id="org4c82783">Automated Fax Routing</h3>
+<div class="outline-text-3" id="text-org4c82783">
+<p>
+<b>Technologies Used</b>
+<code>Python</code>, <code>Tensorflow</code>, <code>FastAPI</code>, <code>AWS Lambda</code>, <code>AWS IAM</code>, <code>AWS SNS/SQS</code>, <code>Terraform</code>
+</p>
+
+<p>
+<b>Problem Description</b>
+A team of Fax routers receives more faxes than they are able to process given their
+team&rsquo;s service level agreement.
+</p>
+
+<p>
+<b>Solution</b>
+To lessen the burned of the fax routing teams&rsquo; workload, I extended a routing system to automatically
+processing incoming faxes. The system predicted key identifiers for each document. These predictions
+were forwarded to an EHR which took an action based on the predicted values.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgac06e39" class="outline-2">
+<h2 id="orgac06e39">Tools I use to build</h2>
+<div class="outline-text-2" id="text-orgac06e39">
+<p>
+<b>For Machine Learning Microservices</b> I&rsquo;ve used and enjoy working with <code>Python</code>, <code>AWS SageMaker</code>,
+<code>Docker</code>, <code>AWS Lambda</code>, <code>FastAPI</code>, <code>AWS ECS</code> to build microservices that serve machine learning
+model predictions. I think this stack offers a path to building maintainable and
+efficient machine learning microservices in a variety (but not all) contexts.
+</p>
+
+<p>
+<b>For Web Applications</b> Some technologies I am excited about are <code>Haskell</code>, <code>IHP Platform</code>, <code>NixOS</code>. I expect to be able to use these build a robust, easily maintainable, and easily modifiable web applications. I am working
+on a personal blog/second brain using IHP now. Please check back for updates on this project.
+</p>
+
+<p>
+<b>I like learning about new tools</b> New problem domains (well those are new to me) likely have
+established or new tech stacks that are better candidates to solving the problem than what I
+have used previously. It&rsquo;s a pleasure to have the time to find a good solution and balance the
+trade-offs when approaching a new problem. I don&rsquo;t believe in the existence of a perfect
+tech stack.
+</p>
+</div>
+</div>
+<div id="outline-container-org3e08554" class="outline-2">
+<h2 id="org3e08554">How is this page made?</h2>
+<div class="outline-text-2" id="text-org3e08554">
+<p>
+<b>Coming soon</b> tl;dr Emacs&rsquo;s org-mode!
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+<footer>
+  <p>&copy; 2024 My Blog. All rights reserved.</p>
+  <p>
+    <a href="mailto:daws.joseph@gmail.com">Contact</a> |
+    <a href="https://www.linkedin.com/in/joseph-daws-1a8b33183/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:20px; height:20px; vertical-align:middle; margin-left:5px;">
+    </a>
+  </p>
+</footer>
+</div>
+</body>
+</html>

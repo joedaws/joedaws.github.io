@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-21 Thu 23:31 -->
+<!-- 2024-11-25 Mon 15:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Joseph Daws, Jr.</title>
@@ -550,7 +550,7 @@ Iterating on my understanding of the problem domain and the world is key.
 </p>
 
 
-<div id="org2f9e6d7" class="figure">
+<div id="orgf80ca69" class="figure">
 <p><img src="./img/joe_pic.jpg" alt="&quot;Joseph Daws, Jr.&quot;" width="300p" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Taken around Jan. 2024</p>
@@ -649,7 +649,66 @@ tech stack.
 <h2 id="org3e08554">How is this page made?</h2>
 <div class="outline-text-2" id="text-org3e08554">
 <p>
-<b>Coming soon</b> tl;dr Emacs&rsquo;s org-mode!
+<b>Overview</b> The content of this page is from a single org file,
+<code>index.org</code> in the <a href="https://github.com/joedaws/joedaws.github.io">github repo</a>. the other files in the repostory
+contain the rendered content and the style information.
+</p>
+
+<p>
+<b>Styling</b> The styling is injected into the project using the <code>#+SETUPFILE</code> option in
+the org file. The css that defines the style is stated in <code>#+HTML_HEAD:</code> lines
+in the theme file. All of the styling is contained in the file <code>gray.theme</code>.
+The element selectors and classes get injected in the style tag in the generated html
+file by <code>org-publish</code>.
+</p>
+
+<p>
+<b>Workflow</b> For immediate feedback on changes we use <code>impatient-mode</code> which in doom-emacs
+can be added with the package below in the <code>packages.el</code> file used by doom.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #282a2e;">(</span><span style="color: #282a2e;">package!</span> <span style="color: #969896;">impatient-mode</span><span style="color: #282a2e;">)</span>
+</pre>
+</div>
+<p>
+Open the html file associated with the <code>index.org</code> file using <code>M-x impatient-mode</code>
+of Edit the <code>index.org</code> file with content changes. Then use <code>M-x httpd-start</code> in
+the <code>index.html</code> buffer to start serving the html at the path
+<code>localhost:8080/imp/live/index.html</code>
+</p>
+
+<p>
+With a few small changes to the configuration of doom-emacs the
+newly generated html file on disk will also update the html buffer which
+impatient-model serves. In the configuration that I use for doom-emacs I added
+the following hooks
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #282a2e;">(</span><span style="color: #282a2e;">defun</span> <span style="color: #282a2e; font-style: italic;">auto-revert-html-buffer</span> <span style="color: #282a2e;">()</span>
+  <span style="color: #282a2e;">(</span><span style="color: #282a2e;">when</span> <span style="color: #282a2e;">(</span><span style="color: #282a2e;">and</span> <span style="color: #969896;">buffer-file-name</span>
+             <span style="color: #282a2e;">(</span><span style="color: #969896; font-style: italic;">string-equal</span> <span style="color: #282a2e;">(</span><span style="color: #282a2e; font-style: italic;">file-name-extension</span> <span style="color: #969896;">buffer-file-name</span><span style="color: #282a2e;">)</span> <span style="color: #969896;">"html"</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span>
+    <span style="color: #282a2e;">(</span><span style="color: #969896;">auto-revert-mode</span> <span style="color: #969896; font-weight: bold;">1</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span>
+
+<span style="color: #c5c8c6; font-style: italic;">;; </span><span style="color: #c5c8c6; font-style: italic;">reload html file associated buffers when they change on disk</span>
+<span style="color: #282a2e;">(</span><span style="color: #282a2e; font-style: italic;">add-hook</span> <span style="color: #282a2e;">'</span><span style="color: #969896;">find-file-hook</span> <span style="color: #282a2e;">#'</span><span style="color: #282a2e;">auto-revert-html-buffer</span><span style="color: #282a2e;">)</span>
+
+<span style="color: #282a2e;">(</span><span style="color: #282a2e;">defun</span> <span style="color: #282a2e; font-style: italic;">org-publish-refresh-html</span> <span style="color: #282a2e;">(</span>_plist _project<span style="color: #282a2e;">)</span>
+  <span style="color: #c5c8c6; font-style: italic;">"Refresh the HTML buffer if it is open after publishing."</span>
+  <span style="color: #282a2e;">(</span><span style="color: #282a2e;">let</span> <span style="color: #282a2e;">(</span><span style="color: #282a2e;">(</span>html-file <span style="color: #282a2e;">(</span>org-publish-get-target-file <span style="color: #282a2e;">(</span><span style="color: #969896;">buffer-file-name</span><span style="color: #282a2e;">)</span> <span style="color: #282a2e;">'</span><span style="color: #282a2e;">html</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span>
+    <span style="color: #282a2e;">(</span><span style="color: #282a2e;">when</span> <span style="color: #282a2e;">(</span><span style="color: #969896; font-style: italic;">get-file-buffer</span> html-file<span style="color: #282a2e;">)</span>
+      <span style="color: #282a2e;">(</span><span style="color: #282a2e;">with-current-buffer</span> <span style="color: #282a2e;">(</span><span style="color: #969896; font-style: italic;">get-file-buffer</span> html-file<span style="color: #282a2e;">)</span>
+        <span style="color: #282a2e;">(</span><span style="color: #282a2e; font-style: italic;">revert-buffer</span> t t t<span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span><span style="color: #282a2e;">)</span>
+
+<span style="color: #c5c8c6; font-style: italic;">;; </span><span style="color: #c5c8c6; font-style: italic;">reload html buffer after org-publish</span>
+<span style="color: #282a2e;">(</span><span style="color: #282a2e; font-style: italic;">add-hook</span> <span style="color: #282a2e;">'</span><span style="color: #969896;">org-publish-after-publishing-hook</span> <span style="color: #282a2e;">#'</span><span style="color: #282a2e;">org-publish-refresh-html</span><span style="color: #282a2e;">)</span>
+</pre>
+</div>
+
+<p>
+<b>Inspiration</b>
+[1] <a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html">Org mode publish tutorial</a>
+[2] <a href="https://github.com/fniessen/org-html-themes">the theme of this page is based on gray from org-html-themes</a>
 </p>
 </div>
 </div>
@@ -657,7 +716,7 @@ tech stack.
 <div id="postamble" class="status">
 
 <footer>
-  <p>&copy; 2024 My Blog. All rights reserved.</p>
+  <p>Joseph Daws, Jr. &copy; 2024</p>
   <p>
     <a href="mailto:daws.joseph@gmail.com">Contact</a> |
     <a href="https://www.linkedin.com/in/joseph-daws-1a8b33183/" target="_blank">

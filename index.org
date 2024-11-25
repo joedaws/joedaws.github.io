@@ -71,4 +71,51 @@ trade-offs when approaching a new problem. I don't believe in the existence of a
 tech stack.
 
 * How is this page made?
-*Coming soon* tl;dr Emacs's org-mode!
+*Overview* The content of this page is from a single org file,
+=index.org= in the [[https://github.com/joedaws/joedaws.github.io][github repo]]. the other files in the repostory
+contain the rendered content and the style information.
+
+*Styling* The styling is injected into the project using the =#+SETUPFILE= option in
+the org file. The css that defines the style is stated in =#+HTML_HEAD:= lines
+in the theme file. All of the styling is contained in the file =gray.theme=.
+The element selectors and classes get injected in the style tag in the generated html
+file by =org-publish=.
+
+*Workflow* For immediate feedback on changes we use =impatient-mode= which in doom-emacs
+can be added with the package below in the =packages.el= file used by doom.
+#+begin_src elisp
+(package! impatient-mode)
+#+end_src
+Open the html file associated with the =index.org= file using =M-x impatient-mode=
+of Edit the =index.org= file with content changes. Then use =M-x httpd-start= in
+the =index.html= buffer to start serving the html at the path
+=localhost:8080/imp/live/index.html=
+
+With a few small changes to the configuration of doom-emacs the
+newly generated html file on disk will also update the html buffer which
+impatient-model serves. In the configuration that I use for doom-emacs I added
+the following hooks
+
+#+begin_src elisp
+(defun auto-revert-html-buffer ()
+  (when (and buffer-file-name
+             (string-equal (file-name-extension buffer-file-name) "html"))
+    (auto-revert-mode 1)))
+
+;; reload html file associated buffers when they change on disk
+(add-hook 'find-file-hook #'auto-revert-html-buffer)
+
+(defun org-publish-refresh-html (_plist _project)
+  "Refresh the HTML buffer if it is open after publishing."
+  (let ((html-file (org-publish-get-target-file (buffer-file-name) 'html)))
+    (when (get-file-buffer html-file)
+      (with-current-buffer (get-file-buffer html-file)
+        (revert-buffer t t t)))))
+
+;; reload html buffer after org-publish
+(add-hook 'org-publish-after-publishing-hook #'org-publish-refresh-html)
+#+end_src
+
+*Inspiration*
+[1] [[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Org mode publish tutorial]]
+[2] [[https://github.com/fniessen/org-html-themes][the theme of this page is based on gray from org-html-themes]]

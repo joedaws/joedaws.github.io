@@ -1,11 +1,23 @@
 #+Title: Joseph Daws, Jr.
 #+AUTHOR: Joseph Daws, Jr.
 #+OPTIONS: num:nil ^:nil <:t
-
 #+ATTR_HTML: :width 20p
-[[./img/crow.svg]] Hello, my name is Joseph
-(Joe if you prefer monosyllabic names).
 
+
+#+BEGIN_EXPORT html
+<div class="sticky-banner">
+  Consider following me at
+  <a href="https://bsky.app/profile/jozzef.bsky.social">jozzef.bsky.social</a>
+  for thoughts an opinions about computers and other matters.
+</div>
+#+END_EXPORT
+
+* About
+:PROPERTIES:
+:CUSTOM_ID: about
+:END:
+
+[[./img/crow.svg]] Hello, my name is Joseph (Joe if you prefer monosyllabic names).
 *I build software to help humans thrive.* I believe that software
 can be used to improve the state of the world despite it's challenges
 and potential dangers. One lens through which I view my work is
@@ -15,11 +27,6 @@ Iterating on my understanding of the problem domain and the world is key.
 #+CAPTION: Taken around Jan. 2024
 #+ATTR_HTML: :width 300p :align center :alt "Joseph Daws, Jr." :align center
 [[./img/joe_pic.jpg]]
-
-* About
-:PROPERTIES:
-:CUSTOM_ID: about
-:END:
 
 I believe machine learning (and software in general) can be used to improve the
 state of the world. However, deploying these technologies requires a nuanced

@@ -482,6 +482,21 @@
      }
  }
 
+/* Sticky Banner Styles */
+.sticky-banner {
+  position: sticky; /* Sticks to the top of the viewport */
+  top: 0; /* Position it at the top */
+  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: #f9f9f9;
+  text-align: center; /* Center-align text */
+  padding: 10px; /* Padding for spacing */
+  font-size: 1.2em; /* Slightly larger font size */
+  font-weight: bold; /* Make the text stand out */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  margin-bottom: 15 px
+}
+
+
  footer {
    text-align: center; /* Center-align the footer */
     margin-top: 30px; /* Add space above the footer */

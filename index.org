@@ -70,9 +70,10 @@ A team of Fax routers receives more faxes than they are able to process given th
 team's service level agreement.
 
 *Solution*
-To lessen the burned of the fax routing teams' workload, I extended a routing system to automatically
-processing incoming faxes. The system predicted key identifiers for each document. These predictions
-were forwarded to an EHR which took an action based on the predicted values.
+To lessen the burned of the fax routing teams' workload, I extended a routing system
+to automatically processing incoming faxes. The system predicted key identifiers for
+each document. These predictions were forwarded to an EHR which took an action
+based on the predicted values.
 
 * Tools
 :PROPERTIES:

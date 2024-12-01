@@ -16,7 +16,7 @@ emacs.
            :publishing-function org-html-publish-to-html
            :recursive t
            :section-numbers nil
-           :html-preamble "
+           :html-head-extra "
 <link rel=\"icon\" type=\"image/svg+xml\" href=\"./img/crow.svg\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheet.css\"
 "

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-12-01 Sun 16:45 -->
+<!-- 2024-12-01 Sun 16:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Joseph Daws, Jr.</title>
@@ -196,6 +196,14 @@
 
 <link rel="icon" type="image/svg+xml" href="img/crow.svg">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+function removeBanner() {
+  const banner = document.getElementById('stickyBanner');
+  if (banner) {
+    banner.style.display = 'none';
+  }
+}
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -217,7 +225,8 @@
 </ul>
 </div>
 </div>
-<div class="sticky-banner">
+<div class="sticky-banner" id="stickyBanner">
+  <button class="close-btn" onclick="removeBanner()">x</button>
   Consider following me at
   <a href="https://bsky.app/profile/jozzef.bsky.social">jozzef.bsky.social</a>
   for thoughts and opinions about computers and other matters.
@@ -235,7 +244,7 @@ Iterating on my understanding of the problem domain and the world is key.
 </p>
 
 
-<div id="orgd76bb47" class="figure">
+<div id="org514c317" class="figure">
 <p><img src="./img/joe_pic.jpg" alt="&quot;Joseph Daws, Jr.&quot;" width="300p" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Taken around Jan. 2024</p>

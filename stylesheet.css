@@ -493,11 +493,39 @@
   font-size: 1.2em; /* Slightly larger font size */
   font-weight: bold; /* Make the text stand out */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  animation: slide-down 0.5s ease-out;
   margin-bottom: 15 px
 }
 
+/* slide-down animation */
+@keyframes slide-down {
+  from {
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
 
- footer {
+/* Close button styles */
+.sticky-banner .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: #f2f794;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 25px;
+  text-align: center;
+}
+
+footer {
    text-align: center; /* Center-align the footer */
     margin-top: 30px; /* Add space above the footer */
     padding: 20px; /* Add padding around the footer content */

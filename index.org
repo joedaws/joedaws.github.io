@@ -3,7 +3,6 @@
 #+OPTIONS: num:nil ^:nil <:t
 #+ATTR_HTML: :width 20p
 
-
 #+BEGIN_EXPORT html
 <div class="sticky-banner">
   Consider following me at
@@ -17,7 +16,7 @@
 :CUSTOM_ID: about
 :END:
 
-[[./img/crow.svg]] Hello, my name is Joseph (Joe if you prefer monosyllabic names).
+Hello, my name is Joseph (Joe if you prefer monosyllabic names).
 *I build software to help humans thrive.* I believe that software
 can be used to improve the state of the world despite it's challenges
 and potential dangers. One lens through which I view my work is

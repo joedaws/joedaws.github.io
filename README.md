@@ -16,6 +16,10 @@ emacs.
            :publishing-function org-html-publish-to-html
            :recursive t
            :section-numbers nil
+           :html-preamble "
+<link rel=\"icon\" type=\"image/svg+xml\" href=\"./img/crow.svg\">
+<link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheet.css\"
+"
            :html-postamble "
 <footer>
   <p>&copy; 2024 My Blog. All rights reserved.</p>

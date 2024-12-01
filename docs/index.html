@@ -3,542 +3,225 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-28 Thu 11:58 -->
+<!-- 2024-12-01 Sun 00:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Joseph Daws, Jr.</title>
 <meta name="author" content="Joseph Daws, Jr." />
 <meta name="generator" content="Org Mode" />
-<link rel="icon" type="image/svg+xml" href="./img/crow.svg">
 <style type="text/css">
-body {
-font-family: Helvetica, Arial, sans-serif;
-font-size: 16px;
-line-height: 1.4;
-color: #33333f;
-}
-
-code {
-font-family: "Inconsolata", "monospace";
-font-size: 16px;
-}
-
-p>code, li>code {
-background-color: #eee;
-padding: 0.25em;
-}
-
-h1, h2, h3 {
-font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-}
-
-h2 {
-padding-bottom: 0.5em;
-font-size: 1.75em;
-}
-
-h3 {
-margin-top: 2em;
-font-size: 1.5em;
-}
-
-h4 {
-font-size: 1.25em;
-}
-
-h5 {
-font-size: 1em;
-}
-
-h2 code, h3 code, h4 code, h5 code, td code {
-font-family: inherit !important;
-font-size: inherit !important;
-}
-
-td code {
-font-weight: bold;
-}
-
-a:link, a:hover, a:visited {
-text-decoration: none;
-color: black;
-}
-
-a:link {
-background: #eaebe6;
-}
-
-a:visited {
-color: #666;
-}
-
-a:link:hover,
-a:visited:hover {
-background: #f2f794;
-}
-
-a[href^="http"]:after {
-content: "\21B3";
-background: white;
-padding-left: 0.2em;
-}
-
-#meta {
-margin-top: 2em;
-}
-
-#table-of-contents a:link,
-#table-of-contents a:visited {
-color: black;
-background: transparent;
-}
-
-#table-of-contents {
-line-height: 1.2;
-}
-#table-of-contents h2 {
-border-bottom: 0;
-font-size: 1.75em;
-}
-
-#table-of-contents ul {
-list-style: none;
-padding-left: 0.5em;
-font-weight: normal;
-}
-
-#table-of-contents div>ul>li {
-margin-top: 1em;
-font-weight: bold;
-font-size: 2.0em;
-}
-
-#table-of-contents .tag {
-display: none;
-}
-
-#table-of-contents .todo,
-#table-of-contents .done {
-font-size: 120%;
-}
-
-#table-of-contents ol>li {
-margin-top: 1em;
-}
-
-table {
-width: 100%;
-}
-
-table, th, td {
-border: 1px solid #666;
-}
-
-th, td {
-padding: 0.5em;
-text-align: left;
-}
-
-tbody tr:nth-child(odd) {
-background-color: #eee;
-}
-
-img {
-max-width: 90%;
-}
-
-div.notice {
-position: relative;
-margin: 0 1.2em;
-padding: 0.25em 1em;
-border-left: 4px solid;
-}
-
-table + div.notice {
-margin-top: 2em;
-}
-
-div.notice a {
-background: transparent !important;
-border-bottom: 1px dotted;
-}
-
-div.notice a[href^="http"]:after {
-background: transparent !important;
-}
-
-div.notice:before {
-position: absolute;
-top: 0;
-right: 0;
-padding: 0.25em 0.5em 0;
-font-size: 60%;
-border-bottom-left-radius: 0.5em;
-}
-
-.notice-warning {
-background: #fcc;
-color: #600;
-}
-
-.notice-example {
-background: #def;
-color: #069;
-}
-
-.notice-info {
-background: #efe;
-color: #060;
-}
-
-.notice-warning a {
-color: #600;
-}
-
-.notice-example a {
-color: #069;
-}
-
-.notice-info a {
-color: #060;
-}
-
-div.notice-warning:before {
-content: "WARNING";
-background: #c99;
-color: #fcc;
-}
-
-div.notice-example:before {
-content: "EXAMPLE";
-background: #abc;
-color: #def;
-}
-
-div.notice-info:before {
-content: "INFO";
-background: #9c9;
-color: #efe;
-}
-
-/* things inside the #+BEGIN_NOTE...#+END_NOTE block */
-div.NOTE a {
-background: transparent !important;
-border-bottom: 1px dotted;
-}
-
-div.NOTE {
-position: relative;
-margin: 0 1.2em;
-padding: 0.25em 1em;
-border-left: 4px solid;
-margin-top: 2em;
-background: #efe;
-color: #060;
-}
-
-div.NOTE:before {
-position: absolute;
-top: 0;
-right: 0;
-padding: 0.25em 0.5em 0;
-font-size: 60%;
-border-bottom-left-radius: 0.5em;
-content: "NOTE";
-background: #9c9;
-color: #efe;
-}
-
-blockquote {
-padding: 0px 10px 0px 10px;
-border: 1px solid #ddd;
-background: #eee;
-box-shadow: 5px 5px 5px #eee;
-border-radius: 2px;
-line-height: 1.2em;
-}
-
-pre {
-font-family: "Inconsolata", "monospace";
-font-size: 100%;
-border: 0;
-box-shadow: none;
-overflow: auto;
-}
-
-pre.example:before {
-content: "EXAMPLE";
-display: block;
-border-bottom: 1px dotted;
-margin-bottom: 1em;
-}
-
-pre.example {
-background: #fec;
-color: #666;
-font-size: 0.85em;
-}
-
-pre {
-background-color: #f8f8f8;
-background-size: 8px 8px;
-background-image: linear-gradient(135deg, transparent 25%, rgba(0, 0, 0, 0.02) 25%, rgba(0, 0, 0, 0.02) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0.02));
-}
-
-pre.src {
-padding: 0.5em;
-}
-
-pre.src:before {
-display: block;
-position: absolute;
-background-color: #ccccd0;
-top: 0;
-right: 0;
-padding: 0.25em 0.5em;
-border-bottom-left-radius: 8px;
-border: 0;
-color: white;
-font-size: 80%;
-}
-
-pre.src-plantuml:before {
-content: "UML";
-}
-
-pre.src-javascript:before {
-content: "JS";
-}
-
-pre.src-clojure:before {
-content: "CLJ";
-}
-
-pre.src-c:before {
-content: "C";
-}
-
-pre.src-sh:before {
-content: "Shell";
-}
-
-pre.src-es:before {
-content: "ES";
-}
-
-span.org-string {
-color: #f94;
-}
-
-span.org-keyword {
-color: #c07;
-}
-
-span.org-variable-name {
-color: #f04;
-}
-
-span.org-clojure-keyword {
-color: #09f;
-}
-
-span.org-comment, span.org-comment-delimiter {
-color: #999;
-}
-
-span.org-rainbow-delimiters-depth-1, span.org-rainbow-delimiters-depth-5 {
-color: #666;
-}
-
-span.org-rainbow-delimiters-depth-2, span.org-rainbow-delimiters-depth-6 {
-color: #888;
-}
-
-span.org-rainbow-delimiters-depth-3, span.org-rainbow-delimiters-depth-7 {
-color: #aaa;
-}
-
-span.org-rainbow-delimiters-depth-4, span.org-rainbow-delimiters-depth-8 {
-color: #ccc;
-}
-
-div.figure {
-font-size: 0.85em;
-}
-
-.tag {
-font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-font-size: 11px;
-font-weight: normal;
-float: right;
-margin-top: 1em;
-background: transparent;
-}
-
-.tag span {
-background: #ccc;
-padding: 0 0.5em;
-border-radius: 0.2em;
-color: white;
-}
-
-.todo, .done {
-font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-font-weight: normal;
-padding: 0 0.25em;
-border-radius: 0.2em;
-}
-
-.todo {
-background: #f04;
-color: white;
-}
-
-.done {
-background: #5f7;
-color: white;
-}
-
-@media screen {
-h1.title {
-text-align: left;
-margin: 0.5em 0 1em 0;
-}
-
-h2 {
-margin-top: 3em;
-}
-
-#table-of-contents {
-position: fixed;
-top: 0;
-left: 0;
-padding: 2em 0 2em 2em;
-width: 290px;
-height: 100vh;
-font-size: 11px;
-background: #eee;
-overflow-x: hidden;
-overflow-y: auto;
-}
-
-#table-of-contents h2 {
-margin-top: 0;
-}
-
-#table-of-contents code {
-font-size: 12px;
-}
-
-div#content {
-margin-left: 320px;
-max-width: 1100px;
-}
-div#postamble {
-margin-left: 320px;
-max-width: 1100px;
-}
-}
-
-@media screen and (max-width: 1024px) {
-html, body {
-font-size: 14px;
-}
-
-#table-of-contents {
-display: none;
-}
-
-h1.title {
-margin-left: 0%;
-}
-
-div#content {
-margin-left: 5%;
-max-width: 90%;
-}
-div#postamble {
-margin-left: 5%;
-max-width: 90%;
-}
-}
-
-@media print {
-
-body {
-color: black;
-}
-
-@page {
-margin: 25mm;
-}
-
-h2, h3 {
-page-break-before: always;
-margin-top: 0;
-}
-
-table {
-page-break-inside: avoid;
-}
-
-a:visited {
-color: black;
-background: #ff8;
-}
-
-a[href^="http"]:visited {
-background: #bff;
-}
-
-div.notice:before {
-display: none;
-}
-}
-
-footer {
-text-align: center; /* Center-align the footer */
-margin-top: 30px; /* Add space above the footer */
-padding: 20px; /* Add padding around the footer content */
-font-size: 0.9em; /* Slightly smaller font size */
-color: #666666; /* Subtle gray color for text */
-background-color: #f9f9f9; /* Light gray background */
-border-top: 1px solid #dddddd; /* Add a subtle border on top */
-}
-
-footer a {
-color: #666666; /* Match the link color to the footer text */
-text-decoration: none; /* Remove underline */
-border-bottom: 1px dotted #666666; /* Add a dotted underline effect */
-}
-
-footer a:hover {
-color: #333333; /* Darker gray on hover */
-border-bottom: 1px solid #333333; /* Solid underline on hover */
-}
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
 </style>
 </head>
 <body>
+<div id="preamble" class="status">
+
+<link rel="icon" type="image/svg+xml" href="./img/crow.svg">
+<link rel="stylesheet" type="text/css" href="stylesheet.css"
+</div>
 <div id="content" class="content">
 <h1 class="title">Joseph Daws, Jr.</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#about">About Me</a></li>
-<li><a href="#works">Recent Work</a>
+<li><a href="#about">About</a></li>
+<li><a href="#works">Work</a>
 <ul>
 <li><a href="#works-summarization">Document Summarization</a></li>
 <li><a href="#works-routing">Automated Fax Routing</a></li>
 </ul>
 </li>
-<li><a href="#tools">Tools I use to build</a></li>
-<li><a href="#how-it-is-made">How is this page made?</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#how-it-is-made">Site</a></li>
+<li><a href="#org9d3ca39">Expedition</a></li>
 </ul>
 </div>
 </div>
 <p width="20p">
-<img src="./img/crow.svg" alt="crow.svg" class="org-svg" width="20p" /> Hello, my name is Joseph (or Joe if you prefer monosyllabic names).
+<img src="./img/crow.svg" alt="crow.svg" class="org-svg" width="20p" /> Hello, my name is Joseph
+(Joe if you prefer monosyllabic names).
 </p>
 
 <p>
@@ -550,13 +233,13 @@ Iterating on my understanding of the problem domain and the world is key.
 </p>
 
 
-<div id="orgd988140" class="figure">
+<div id="org717dd6f" class="figure">
 <p><img src="./img/joe_pic.jpg" alt="&quot;Joseph Daws, Jr.&quot;" width="300p" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Taken around Jan. 2024</p>
 </div>
 <div id="outline-container-about" class="outline-2">
-<h2 id="about">About Me</h2>
+<h2 id="about">About</h2>
 <div class="outline-text-2" id="text-about">
 <p>
 I believe machine learning (and software in general) can be used to improve the
@@ -575,7 +258,7 @@ care providers so that they may better connect with their patients.
 </div>
 </div>
 <div id="outline-container-works" class="outline-2">
-<h2 id="works">Recent Work</h2>
+<h2 id="works">Work</h2>
 <div class="outline-text-2" id="text-works">
 </div>
 <div id="outline-container-works-summarization" class="outline-3">
@@ -623,7 +306,7 @@ were forwarded to an EHR which took an action based on the predicted values.
 </div>
 </div>
 <div id="outline-container-tools" class="outline-2">
-<h2 id="tools">Tools I use to build</h2>
+<h2 id="tools">Tools</h2>
 <div class="outline-text-2" id="text-tools">
 <p>
 <b>For Machine Learning Microservices</b> I&rsquo;ve used and enjoy working with <code>Python</code>, <code>AWS SageMaker</code>,
@@ -647,7 +330,7 @@ tech stack.
 </div>
 </div>
 <div id="outline-container-how-it-is-made" class="outline-2">
-<h2 id="how-it-is-made">How is this page made?</h2>
+<h2 id="how-it-is-made">Site</h2>
 <div class="outline-text-2" id="text-how-it-is-made">
 <p>
 <b>Overview</b> The content of this page is from a single org file,
@@ -713,6 +396,22 @@ the following hooks
 <p>
 [1] <a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html">Org mode publish tutorial</a>
 [2] <a href="https://github.com/fniessen/org-html-themes">the theme of this page is based on gray from org-html-themes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org9d3ca39" class="outline-2">
+<h2 id="org9d3ca39">Expedition</h2>
+<div class="outline-text-2" id="text-org9d3ca39">
+<p>
+<a href="https://100r.co/site/home.html">100 rabbits</a>
+</p>
+
+<p>
+<a href="https://www.dereventsov.com/">Anton Dereventsov</a>
+</p>
+
+<p>
+More soon
 </p>
 </div>
 </div>

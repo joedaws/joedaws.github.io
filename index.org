@@ -1,10 +1,10 @@
-#+SETUPFILE: ~/Sync/joedaws-github-io/gray.theme
 #+Title: Joseph Daws, Jr.
 #+AUTHOR: Joseph Daws, Jr.
 #+OPTIONS: num:nil ^:nil <:t
 
 #+ATTR_HTML: :width 20p
-[[./img/crow.svg]] Hello, my name is Joseph (or Joe if you prefer monosyllabic names).
+[[./img/crow.svg]] Hello, my name is Joseph
+(Joe if you prefer monosyllabic names).
 
 *I build software to help humans thrive.* I believe that software
 can be used to improve the state of the world despite it's challenges
@@ -16,7 +16,7 @@ Iterating on my understanding of the problem domain and the world is key.
 #+ATTR_HTML: :width 300p :align center :alt "Joseph Daws, Jr." :align center
 [[./img/joe_pic.jpg]]
 
-* About Me
+* About
 :PROPERTIES:
 :CUSTOM_ID: about
 :END:
@@ -32,7 +32,7 @@ I am currently a Senior Machine Learning Software Engineer at [[https://onemedic
 working on automating laborious and monotonous tasks to give time back to health
 care providers so that they may better connect with their patients.
 
-* Recent Work
+* Work
 :PROPERTIES:
 :CUSTOM_ID: works
 :END:
@@ -68,7 +68,7 @@ To lessen the burned of the fax routing teams' workload, I extended a routing sy
 processing incoming faxes. The system predicted key identifiers for each document. These predictions
 were forwarded to an EHR which took an action based on the predicted values.
 
-* Tools I use to build
+* Tools
 :PROPERTIES:
 :CUSTOM_ID: tools
 :END:
@@ -87,7 +87,7 @@ have used previously. It's a pleasure to have the time to find a good solution a
 trade-offs when approaching a new problem. I don't believe in the existence of a perfect
 tech stack.
 
-* How is this page made?
+* Site
 :PROPERTIES:
 :CUSTOM_ID: how-it-is-made
 :END:
@@ -140,3 +140,11 @@ the following hooks
 
 [1] [[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Org mode publish tutorial]]
 [2] [[https://github.com/fniessen/org-html-themes][the theme of this page is based on gray from org-html-themes]]
+
+* Expedition
+
+[[https://100r.co/site/home.html][100 rabbits]]
+
+[[https://www.dereventsov.com/][Anton Dereventsov]]
+
+More soon

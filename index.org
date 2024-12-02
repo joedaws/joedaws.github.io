@@ -100,7 +100,7 @@ tech stack.
 :PROPERTIES:
 :CUSTOM_ID: how-it-is-made
 :END:
-*Overview* The content of this page is from a single org file,
+*Overview* The content of this page is from an org file,
 =index.org= in the [[https://github.com/joedaws/joedaws.github.io][github repo]]. the other files in the repository
 contain the rendered content and the style information.
 

@@ -19,6 +19,7 @@ emacs.
            :html-head-extra "
 <link rel=\"icon\" type=\"image/svg+xml\" href=\"./img/crow.svg\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheet.css\"
+<script src=\"script.js\"></script>
 "
            :html-postamble "
 <footer>

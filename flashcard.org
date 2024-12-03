@@ -1,0 +1,76 @@
+#+title: Flashcard
+#+AUTHOR: Joseph Daws, Jr.
+#+OPTIONS: num:nil ^:nil <:t
+#+ATTR_HTML: :width 20p
+
+* Trivia
+:PROPERTIES:
+:CUSTOM_ID: memorize-it
+:END:
+
+*[[file:index.org][home]]*
+
+Here are some anecdotes and trivia about my home state of Tennessee.
+
+#+BEGIN_EXPORT html
+<div class="flashcard-container">
+  <div class="flashcard">
+    <div class="card front" id="question"></div>
+    <div class="card back" id="answer"></div>
+  </div>
+  <button id="flip-card">Flip</button>
+  <button id="new-card">New Card</button>
+</div>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<script>
+/* List of questions and answers */
+const flashcards = [
+  { question: "What state is referrenced at least once in all of Quinton Tarantino's films?", answer: "Tennessee" },
+  { question: "Where was the original formula for Mtn. Dew created?",
+    answer: "Knoxville, TN" },
+];
+
+let currentCardIndex = -1;
+
+// Function to load a random question-answer pair, excluding the current card
+function loadRandomCard() {
+  let newIndex;
+  do {
+    newIndex = Math.floor(Math.random() * flashcards.length);
+  } while (newIndex === currentCardIndex); // Ensure it's not the same card
+  currentCardIndex = newIndex;
+
+  const card = flashcards[currentCardIndex];
+  document.getElementById('question').innerText = card.question;
+  document.getElementById('answer').innerText = card.answer;
+}
+
+// Event listener to flip the card
+document.getElementById('flip-card').addEventListener('click', () => {
+  const flashcard = document.querySelector('.flashcard');
+  flashcard.classList.toggle('flipped');
+});
+
+// Event listener to load a new random card
+document.getElementById('new-card').addEventListener('click', () => {
+  const flashcard = document.querySelector('.flashcard');
+
+  if (flashcard.classList.contains('flipped')) {
+    // If the card is on the back, wait for the flip animation to complete
+    flashcard.classList.remove('flipped');
+    flashcard.addEventListener('transitionend', function handleTransitionEnd() {
+      loadRandomCard(); // Load new content
+      flashcard.removeEventListener('transitionend', handleTransitionEnd); // Clean up
+    }, { once: true }); // Ensures the listener runs only once
+  } else {
+    // If the card is already on the front, update content immediately
+    loadRandomCard();
+  }
+});
+
+// Load the first card when the page loads
+loadRandomCard();
+</script>
+#+END_EXPORT

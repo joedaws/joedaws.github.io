@@ -545,3 +545,56 @@ footer a:hover {
     color: #333333; /* Darker gray on hover */
     border-bottom: 1px solid #333333; /* Solid underline on hover */
 }
+
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.flashcard {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Hides the back side when not facing the user */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.front {
+  transform: rotateY(0deg); /* Front side faces forward */
+}
+
+.back {
+  transform: rotateY(180deg); /* Back side starts hidden */
+  background-color: #f9f9f9;
+}
+
+.flashcard.flipped .front {
+  transform: rotateY(-180deg); /* Front side flips away */
+}
+
+.flashcard.flipped .back {
+  transform: rotateY(0deg); /* Back side becomes visible */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}

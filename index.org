@@ -145,6 +145,8 @@ the following hooks
 (add-hook 'org-publish-after-publishing-hook #'org-publish-refresh-html)
 #+end_src
 
+See the README in the github [[https://github.com/joedaws/joedaws.github.io][repo]] for =doomemacs= configuration.
+
 *Test Driven Development* coming soon
 
 *Inspiration*
@@ -153,9 +155,12 @@ the following hooks
 [2] [[https://github.com/fniessen/org-html-themes][the theme of this page is based on gray from org-html-themes]]
 
 * Expedition
+:PROPERTIES:
+:CUSTOM_ID: expedition
+:END:
+
+What's the web without it's connections?
 
 [[https://100r.co/site/home.html][100 rabbits]]
 
 [[https://www.dereventsov.com/][Anton Dereventsov]]
-
-More soon

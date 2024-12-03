@@ -26,6 +26,10 @@ no need to make the config global, just apply the
 org-publish setting while in the project
 ** Inbox
 ** Log
+
+*** <2024-12-03 Tue>
+Added =.flash-btn= class to keep button classes separate to the
+stylesheet.
 *** <2024-12-03 Tue>
 project dependent doom-emacs config was added
 Here are the instructions given https://discourse.doomemacs.org/t/file-and-directory-local-settings/161

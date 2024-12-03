@@ -105,6 +105,8 @@ tech stack.
 
 *[[file:flashcard.org][trivia]]*
 
+*[[file:devlog.org][devlog]]*
+
 ** Modification
 *Overview* The content of this page is from an org file,
 =index.org= in the [[https://github.com/joedaws/joedaws.github.io][github repo]]. the other files in the repository

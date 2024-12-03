@@ -1,0 +1,32 @@
+#+title: Devlog
+#+AUTHOR: Joseph Daws, Jr.
+#+OPTIONS: num:nil ^:nil <:t
+#+ATTR_HTML: :width 20p
+
+
+
+* Personal Site
+** Ideas
+*** <2024-12-03 Tue> Improved workflow
+I've been reading the posts of Kent Beck and one of the
+take aways that is sticking with me is the value of being
+able to change your project quickly. One way to power this
+is to instill confidence that the changes you are making
+have the desired behavior (testing! what a novel idea!)
+I want to add tools to make sure the code for my personal
+site are well tested and that my workflow can speed up
+over time while also adding more complex behavior.
+
+I want to add a linter to css, javascript, and html.
+
+I want to add jest testing for the javascrpt
+
+*** <2024-12-03 Tue> Project dependent doom-emacs config
+no need to make the config global, just apply the
+org-publish setting while in the project
+** Inbox
+*** TODO project dependent doom-emacs config
+Here are the instructions given https://discourse.doomemacs.org/t/file-and-directory-local-settings/161
+
+** Log
+*** <2024-12-03 Tue>

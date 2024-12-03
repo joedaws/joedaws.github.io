@@ -25,8 +25,7 @@ I want to add jest testing for the javascrpt
 no need to make the config global, just apply the
 org-publish setting while in the project
 ** Inbox
-*** TODO project dependent doom-emacs config
-Here are the instructions given https://discourse.doomemacs.org/t/file-and-directory-local-settings/161
-
 ** Log
 *** <2024-12-03 Tue>
+project dependent doom-emacs config was added
+Here are the instructions given https://discourse.doomemacs.org/t/file-and-directory-local-settings/161

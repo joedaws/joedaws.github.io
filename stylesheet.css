@@ -510,8 +510,8 @@
 /* Close button styles */
 .sticky-banner .close-btn {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 10px;
+  left: 5px;
   background: #f2f794;
   color: #000;
   border: none;
@@ -592,7 +592,7 @@ footer a:hover {
   transform: rotateY(0deg); /* Back side becomes visible */
 }
 
-button {
+.flash-btn {
   margin-top: 20px;
   padding: 10px 20px;
   cursor: pointer;

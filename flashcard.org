@@ -18,8 +18,8 @@ Here are some anecdotes and trivia about my home state of Tennessee.
     <div class="card front" id="question"></div>
     <div class="card back" id="answer"></div>
   </div>
-  <button id="flip-card">Flip</button>
-  <button id="new-card">New Card</button>
+  <button class="flash-btn" id="flip-card">Flip</button>
+  <button class="flash-btn" id="new-card">New Card</button>
 </div>
 #+END_EXPORT
 

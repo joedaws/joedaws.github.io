@@ -1,0 +1,13 @@
+{
+  "elements": [
+    "html5"
+  ],
+  "rules": {
+    "doctype-style": "off",
+    "void-style": "off",
+    "deprecated-element": "off",
+    "attribute-boolean-style": ["warn", "omit"],
+    "attr-quotes": ["error", "double"],
+    "self-closing": ["warn", "always"]
+  }
+}

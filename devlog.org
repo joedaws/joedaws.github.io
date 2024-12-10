@@ -7,6 +7,9 @@
 
 * Personal Site
 ** Ideas
+*** <2024-12-04 Wed> No need to validate org-publish
+Don't test other software, just test the html we add for validity.
+
 *** <2024-12-03 Tue> Improved workflow
 I've been reading the posts of Kent Beck and one of the
 take aways that is sticking with me is the value of being

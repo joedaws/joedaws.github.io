@@ -24,6 +24,9 @@ can be used to improve the state of the world despite it's challenges
 and potential dangers. One lens through which I view my work is
 as a string of problem definitions and solving those problems.
 Iterating on my understanding of the problem domain and the world is key.
+Projects I have worked on professionally reside in private repositories,
+but for some of my creative and side projects please see
+[[https://github.com/joedaws/][my github page]].
 
 #+CAPTION: Taken around Jan. 2024
 #+ATTR_HTML: :width 300p :align center :alt "Joseph Daws, Jr." :align center

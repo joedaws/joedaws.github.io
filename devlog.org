@@ -5,12 +5,40 @@
 
 
 
-* Personal Site
-** Ideas
-*** <2024-12-04 Wed> No need to validate org-publish
+* Developing Log
+Ideas and notes for myself in the future.
+** <2025-01-03 Fri> Idea for application
+Build an application to help freewriting becomes distraction
+free and assist in the free flowing and drifting train of
+thought between multiple trains of thought. This application
+should not be aimed solely at the technically inclined but appeal
+to a more general user of software.
+[[https://ghostty.org/docs/about][Ghostty]] recently came out and Mitchell Hashimoto makes some
+really interesting arguments for certain design choices
+and technology choices which I could learn from.
+
+Consider using the same tech stack for my own application.
+Might need to learn zig.
+
+** <2025-01-02 Thu> TUI for pomodoro
+
+Folks who like to use windows managers also like to use
+simple scripts, CLIs, and TUIs. An interesting TUI that
+could be useful is one that implements the pomodoro timer.
+
+Design would include two halves an interesting animation half
+and a timer half. As the timer gets close to the next break
+the character in the animation half get sleepy (or something).
+This is similar to how teenage engineering does animation to
+support users knowing what the machine is up to. It looks cool
+and it conveys information.
+
+For this I think I would want to use Haskell and the brick library.
+
+** <2024-12-04 Wed> No need to validate org-publish
 Don't test other software, just test the html we add for validity.
 
-*** <2024-12-03 Tue> Improved workflow
+** <2024-12-03 Tue> Improved workflow
 I've been reading the posts of Kent Beck and one of the
 take aways that is sticking with me is the value of being
 able to change your project quickly. One way to power this
@@ -24,15 +52,13 @@ I want to add a linter to css, javascript, and html.
 
 I want to add jest testing for the javascrpt
 
-*** <2024-12-03 Tue> Project dependent doom-emacs config
+** <2024-12-03 Tue> Project dependent doom-emacs config
 no need to make the config global, just apply the
 org-publish setting while in the project
-** Inbox
-** Log
 
-*** <2024-12-03 Tue>
+** <2024-12-03 Tue>
 Added =.flash-btn= class to keep button classes separate to the
 stylesheet.
-*** <2024-12-03 Tue>
+** <2024-12-03 Tue>
 project dependent doom-emacs config was added
 Here are the instructions given https://discourse.doomemacs.org/t/file-and-directory-local-settings/161

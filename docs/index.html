@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-12-20 Fri 12:50 -->
+<!-- 2025-01-03 Fri 23:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Joseph Daws, Jr.</title>
@@ -221,8 +221,8 @@
 </li>
 <li><a href="#expedition">Expedition</a>
 <ul>
-<li><a href="#org82b7afe">Online retailers of fascinating objects</a></li>
-<li><a href="#orgf3c2be3">Software</a></li>
+<li><a href="#org69d9c0c">Online retailers of fascinating objects</a></li>
+<li><a href="#orgf39d06c">Software</a></li>
 </ul>
 </li>
 </ul>
@@ -250,7 +250,7 @@ but for some of my creative and side projects please see
 </p>
 
 
-<div id="orgf1bffa5" class="figure">
+<div id="org91460b2" class="figure">
 <p><img src="./img/joe_pic.jpg" alt="&quot;Joseph Daws, Jr.&quot;" width="300p" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Taken around Jan. 2024</p>
@@ -357,7 +357,7 @@ tech stack.
 </p>
 
 <p>
-<b><a href="devlog.html">devlog</a></b>
+<b><a href="log.html">log</a></b>
 </p>
 </div>
 </div>
@@ -383,7 +383,7 @@ file by <code>org-publish</code>.
 can be added with the package below in the <code>packages.el</code> file used by doom.
 </p>
 <div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #7382a0;">(</span><span style="color: #614c61; background-color: #f1ddf1;">package!</span> impatient-mode<span style="color: #7382a0;">)</span>
+<pre class="src src-elisp"><span style="color: #98A3BD;">(</span><span style="color: #83577D;">package!</span> impatient-mode<span style="color: #98A3BD;">)</span>
 </pre>
 </div>
 <p>
@@ -401,23 +401,23 @@ the following hooks
 </p>
 
 <div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #7382a0;">(</span><span style="color: #614c61; background-color: #f1ddf1;">defun</span> <span style="color: #605a52;">auto-revert-html-buffer</span> <span style="color: #9c739c;">()</span>
-  <span style="color: #9c739c;">(</span><span style="color: #614c61; background-color: #f1ddf1;">when</span> <span style="color: #81895d;">(</span><span style="color: #614c61; background-color: #f1ddf1;">and</span> <span style="color: #4c5361; background-color: #dde4f2;">buffer-file-name</span>
-             <span style="color: #957f5f;">(</span><span style="color: #465953; background-color: #d2ebe3;">string-equal</span> <span style="color: #7382a0;">(</span><span style="color: #605a52;">file-name-extension</span> <span style="color: #4c5361; background-color: #dde4f2;">buffer-file-name</span><span style="color: #7382a0;">)</span> <span style="color: #525643; background-color: #e2e9c1;">"html"</span><span style="color: #957f5f;">)</span><span style="color: #81895d;">)</span>
-    <span style="color: #81895d;">(</span><span style="color: #4c5361; background-color: #dde4f2;">auto-revert-mode</span> <span style="color: #465953; background-color: #d2ebe3;">1</span><span style="color: #81895d;">)</span><span style="color: #9c739c;">)</span><span style="color: #7382a0;">)</span>
+<pre class="src src-elisp"><span style="color: #98A3BD;">(</span><span style="color: #83577D;">defun</span> <span style="color: #605A52; font-style: italic;">auto-revert-html-buffer</span> <span style="color: #B399AF;">()</span>
+  <span style="color: #B399AF;">(</span><span style="color: #83577D;">when</span> <span style="color: #AAAE92;">(</span><span style="color: #83577D;">and</span> <span style="color: #556995;">buffer-file-name</span>
+             <span style="color: #B6A48C;">(</span><span style="color: #477A7B;">string-equal</span> <span style="color: #98A3BD;">(</span><span style="color: #605A52; font-style: italic;">file-name-extension</span> <span style="color: #556995;">buffer-file-name</span><span style="color: #98A3BD;">)</span> <span style="color: #747B4D;">"html"</span><span style="color: #B6A48C;">)</span><span style="color: #AAAE92;">)</span>
+    <span style="color: #AAAE92;">(</span><span style="color: #556995;">auto-revert-mode</span> <span style="color: #477A7B;">1</span><span style="color: #AAAE92;">)</span><span style="color: #B399AF;">)</span><span style="color: #98A3BD;">)</span>
 
-<span style="color: #b9a992;">;; </span><span style="color: #b9a992;">reload html file associated buffers when they change on disk</span>
-<span style="color: #7382a0;">(</span><span style="color: #605a52;">add-hook</span> <span style="color: #465953;">'</span><span style="color: #4c5361; background-color: #dde4f2;">find-file-hook</span> <span style="color: #465953;">#'</span><span style="color: #4c5361; background-color: #dde4f2;">auto-revert-html-buffer</span><span style="color: #7382a0;">)</span>
+<span style="color: #9E9A95; font-style: italic;">;; </span><span style="color: #9E9A95; font-style: italic;">reload html file associated buffers when they change on disk</span>
+<span style="color: #98A3BD;">(</span><span style="color: #605A52; font-style: italic;">add-hook</span> <span style="color: #477A7B;">'</span><span style="color: #556995;">find-file-hook</span> <span style="color: #477A7B;">#'</span><span style="color: #556995;">auto-revert-html-buffer</span><span style="color: #98A3BD;">)</span>
 
-<span style="color: #7382a0;">(</span><span style="color: #614c61; background-color: #f1ddf1;">defun</span> <span style="color: #605a52;">org-publish-refresh-html</span> <span style="color: #9c739c;">(</span>_plist _project<span style="color: #9c739c;">)</span>
-  <span style="color: #9d8f7c; font-style: italic;">"Refresh the HTML buffer if it is open after publishing."</span>
-  <span style="color: #9c739c;">(</span><span style="color: #614c61; background-color: #f1ddf1;">let</span> <span style="color: #81895d;">(</span><span style="color: #957f5f;">(</span>html-file <span style="color: #7382a0;">(</span>org-publish-get-target-file <span style="color: #9c739c;">(</span><span style="color: #4c5361; background-color: #dde4f2;">buffer-file-name</span><span style="color: #9c739c;">)</span> <span style="color: #465953;">'</span><span style="color: #4c5361; background-color: #dde4f2;">html</span><span style="color: #7382a0;">)</span><span style="color: #957f5f;">)</span><span style="color: #81895d;">)</span>
-    <span style="color: #81895d;">(</span><span style="color: #614c61; background-color: #f1ddf1;">when</span> <span style="color: #957f5f;">(</span><span style="color: #465953; background-color: #d2ebe3;">get-file-buffer</span> html-file<span style="color: #957f5f;">)</span>
-      <span style="color: #957f5f;">(</span><span style="color: #614c61; background-color: #f1ddf1;">with-current-buffer</span> <span style="color: #7382a0;">(</span><span style="color: #465953; background-color: #d2ebe3;">get-file-buffer</span> html-file<span style="color: #7382a0;">)</span>
-        <span style="color: #7382a0;">(</span><span style="color: #605a52;">revert-buffer</span> t t t<span style="color: #7382a0;">)</span><span style="color: #957f5f;">)</span><span style="color: #81895d;">)</span><span style="color: #9c739c;">)</span><span style="color: #7382a0;">)</span>
+<span style="color: #98A3BD;">(</span><span style="color: #83577D;">defun</span> <span style="color: #605A52; font-style: italic;">org-publish-refresh-html</span> <span style="color: #B399AF;">(</span>_plist _project<span style="color: #B399AF;">)</span>
+  <span style="color: #9E9A95; font-style: italic;">"Refresh the HTML buffer if it is open after publishing."</span>
+  <span style="color: #B399AF;">(</span><span style="color: #83577D;">let</span> <span style="color: #AAAE92;">(</span><span style="color: #B6A48C;">(</span>html-file <span style="color: #98A3BD;">(</span>org-publish-get-target-file <span style="color: #B399AF;">(</span><span style="color: #556995;">buffer-file-name</span><span style="color: #B399AF;">)</span> <span style="color: #477A7B;">'</span><span style="color: #556995;">html</span><span style="color: #98A3BD;">)</span><span style="color: #B6A48C;">)</span><span style="color: #AAAE92;">)</span>
+    <span style="color: #AAAE92;">(</span><span style="color: #83577D;">when</span> <span style="color: #B6A48C;">(</span><span style="color: #477A7B;">get-file-buffer</span> html-file<span style="color: #B6A48C;">)</span>
+      <span style="color: #B6A48C;">(</span><span style="color: #83577D;">with-current-buffer</span> <span style="color: #98A3BD;">(</span><span style="color: #477A7B;">get-file-buffer</span> html-file<span style="color: #98A3BD;">)</span>
+        <span style="color: #98A3BD;">(</span><span style="color: #605A52; font-style: italic;">revert-buffer</span> t t t<span style="color: #98A3BD;">)</span><span style="color: #B6A48C;">)</span><span style="color: #AAAE92;">)</span><span style="color: #B399AF;">)</span><span style="color: #98A3BD;">)</span>
 
-<span style="color: #b9a992;">;; </span><span style="color: #b9a992;">reload html buffer after org-publish</span>
-<span style="color: #7382a0;">(</span><span style="color: #605a52;">add-hook</span> <span style="color: #465953;">'</span><span style="color: #4c5361; background-color: #dde4f2;">org-publish-after-publishing-hook</span> <span style="color: #465953;">#'</span><span style="color: #4c5361; background-color: #dde4f2;">org-publish-refresh-html</span><span style="color: #7382a0;">)</span>
+<span style="color: #9E9A95; font-style: italic;">;; </span><span style="color: #9E9A95; font-style: italic;">reload html buffer after org-publish</span>
+<span style="color: #98A3BD;">(</span><span style="color: #605A52; font-style: italic;">add-hook</span> <span style="color: #477A7B;">'</span><span style="color: #556995;">org-publish-after-publishing-hook</span> <span style="color: #477A7B;">#'</span><span style="color: #556995;">org-publish-refresh-html</span><span style="color: #98A3BD;">)</span>
 </pre>
 </div>
 
@@ -447,9 +447,9 @@ See the README in the github <a href="https://github.com/joedaws/joedaws.github.
 What&rsquo;s the web without it&rsquo;s connections?
 </p>
 </div>
-<div id="outline-container-org82b7afe" class="outline-3">
-<h3 id="org82b7afe">Online retailers of fascinating objects</h3>
-<div class="outline-text-3" id="text-org82b7afe">
+<div id="outline-container-org69d9c0c" class="outline-3">
+<h3 id="org69d9c0c">Online retailers of fascinating objects</h3>
+<div class="outline-text-3" id="text-org69d9c0c">
 <p>
 Proveyors of fine papers an pens <a href="https://www.baum-kuchen.net/">Baum-kuchen</a>
 </p>
@@ -463,9 +463,9 @@ Bicycle frames made in Knoxville, TN <a href="https://www.muskratbikes.com/">mus
 </p>
 </div>
 </div>
-<div id="outline-container-orgf3c2be3" class="outline-3">
-<h3 id="orgf3c2be3">Software</h3>
-<div class="outline-text-3" id="text-orgf3c2be3">
+<div id="outline-container-orgf39d06c" class="outline-3">
+<h3 id="orgf39d06c">Software</h3>
+<div class="outline-text-3" id="text-orgf39d06c">
 <p>
 <a href="https://100r.co/site/home.html">100 rabbits</a>
 </p>

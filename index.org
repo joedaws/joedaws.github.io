@@ -108,7 +108,7 @@ tech stack.
 
 *[[file:flashcard.org][trivia]]*
 
-*[[file:devlog.org][devlog]]*
+*[[file:log.org][log]]*
 
 ** Modification
 *Overview* The content of this page is from an org file,

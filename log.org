@@ -1,12 +1,24 @@
-#+title: Devlog
+#+title: Log
 #+AUTHOR: Joseph Daws, Jr.
 #+OPTIONS: num:nil ^:nil <:t
 #+ATTR_HTML: :width 20p
 
 
 
-* Developing Log
-Ideas and notes for myself in the future.
+* Log of ideas, list of notes, snippets of thoughts
+** <2025-01-03 Fri> Pomodoro Mascot
+
+There is of course the Pomodoro method for taking
+breaking during focused work. But what kind of mascot
+would be appropriate to cheer you on as you work through
+focus periods?
+
+Pomodoro is the Italian word for tomato, so a tomato
+seems quite appropriate as the mascot.
+
+The Pomodoro technique is named after the timer used
+by the creator, Fancesco Cirillo.
+
 ** <2025-01-03 Fri> Idea for application
 Build an application to help freewriting becomes distraction
 free and assist in the free flowing and drifting train of
@@ -59,6 +71,7 @@ org-publish setting while in the project
 ** <2024-12-03 Tue>
 Added =.flash-btn= class to keep button classes separate to the
 stylesheet.
+
 ** <2024-12-03 Tue>
 project dependent doom-emacs config was added
 Here are the instructions given https://discourse.doomemacs.org/t/file-and-directory-local-settings/161

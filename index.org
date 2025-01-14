@@ -7,9 +7,9 @@
 #+BEGIN_EXPORT html
 <div class="banner" id="stickyBanner">
   <button class="close-btn" onclick="removeBanner()">x</button>
-  Consider following me at
-  <a href="https://bsky.app/profile/jozzef.bsky.social">jozzef.bsky.social</a>
-  for thoughts and opinions about computers and other matters.
+  Consider subscribing to receive emailed thoughts and opinions about
+  math and computers
+  <a href="https://world.hey.com/jozzef">jozzef HEY world blog</a>
 </div>
 #+END_EXPORT
 

@@ -102,22 +102,12 @@ have used previously. It's a pleasure to have the time to find a good solution a
 trade-offs when approaching a new problem. I don't believe in the existence of a perfect
 tech stack.
 
-*  [[file:log.org][Log]]
-:PROPERTIES:
-:CUSTOM_ID: log
-:END:
-
-I keep some notes and ideas in a *[[file:log.org][log]]*. You might be interested in it if you want to
-see some ideas for applications or progress on some of my personal projects. Another
-reason you might be interested in this page is that entries may point to interesting
-technologies.
-
 * [[file:flashcard.org][Trivia]]
 :PROPERTIES:
 :CUSTOM_ID: trivia
 :END:
 
-One can learn about another by contemplating the trivia that they find interesting,
+One can learn about another by exploring the trivia that they find interesting,
 or that's what I believe at least. Here are some trivia flashcards that I think are
 fascinating tidbits of information: *[[file:flashcard.org][trivia]]*.
 

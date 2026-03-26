@@ -146,6 +146,13 @@ body {
   margin: 0.45rem 0;
 }
 
+/*
+ * Crow icon SVG
+ * Collection: Font Awesome Solid Icons
+ * License: CC Attribution License (https://creativecommons.org/licenses/by/4.0/)
+ * Author: FortAwesome (https://github.com/FortAwesome/Font-Awesome)
+ * Source: https://www.svgrepo.com/svg/collection/font-awesome-solid-icons/
+ */
 .crow-icon {
   width: 52px;
   height: 52px;

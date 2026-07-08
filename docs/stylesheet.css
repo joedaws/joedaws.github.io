@@ -260,3 +260,17 @@ body {
   color: var(--hover-text);
   opacity: 0.5;
 }
+
+/* ── Back item (submenu pages) ───────────────────── */
+
+.menu-back {
+  margin-top: 1.25rem;
+}
+
+.menu-back .arrow {
+  transform: translateX(8px);
+}
+
+.menu-back:hover .arrow {
+  transform: translateX(0);
+}
